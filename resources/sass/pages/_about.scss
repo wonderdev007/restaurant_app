@@ -1,0 +1,21 @@
+
+.about-page {
+    padding: 10rem;
+
+    &__title {
+        margin-bottom: 2rem;
+        font-size: 3rem;
+        font-weight: 700;
+        color: #000;
+    }
+
+    &__text {
+        font-size: 1.1rem;
+        line-height: 1.6;
+    }
+
+    .content-box {
+        background-color: #fff;
+        padding: 2rem;
+    }
+}

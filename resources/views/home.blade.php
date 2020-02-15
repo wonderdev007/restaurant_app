@@ -5,7 +5,7 @@
 @section('content')
     <section id="information">
         <div class="restaurant-image">
-            <img src="img/top-down.jpg">
+            <img src="img/top-down2.jpg">
             </div>
             <div class="info">
             <h2>We Started From The Bottom In 2015</h2>
@@ -74,7 +74,7 @@
                         Getting dinner on the table is easy with these main dishes and entrées. Recipes from our kitchens professionals are designed to inspire – whether you are eating at us or cooking at home.
                     </p>
                     <div class="food-image">
-                        <img src="https://www.pngkey.com/png/full/342-3422633_pork-entrees-steak-pork-png.png">
+                        <img src="img/.png">
                     </div>
                     </div>
 

@@ -1,4 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700");
+@import url('https://fonts.googleapis.com/css?family=Proza+Libre:400,500&display=swap');
+@import "bootstrap.min.css";
 @import "reset";
 @import "home";
 @import "pages/about";
@@ -33,6 +35,11 @@ table {
 
 body {
     font-family: "Roboto", sans-serif;
+}
+
+p  {
+    font-family: 'Montserrat', sans-serif;
+
 }
 
 #app-layout {
@@ -135,6 +142,28 @@ body {
                 }
             }
         }
+    }
+
+    #content-section {
+        max-width: calc(100vw - 350px);
+        background: #1dfa28;
+
+        /* Old browsers */
+        background: -moz-radial-gradient(center,
+                ellipse cover,
+                #1dfa28 0%,
+                #04b90d 100%);
+        /* FF3.6-15 */
+        background: -webkit-radial-gradient(center,
+                ellipse cover,
+                #1dfa28 0%,
+                #04b90d 100%);
+        /* Chrome10-25,Safari5.1-6 */
+        background: radial-gradient(ellipse at center,
+                #1dfa28 0%,
+                #04b90d 100%);
+        /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        overflow: hidden;
     }
 }
 
