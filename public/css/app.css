@@ -170,8 +170,8 @@ table {
 
 #welcome .welcome-menu .menu .menu-title {
   text-transform: uppercase;
-  color: #0971ce;
-  font-weight: 700;
+  color: #000;
+  font-weight: bold;
   font-size: 1.2rem;
   border-bottom: 1px solid #e2eaef;
   padding-bottom: 20px;
@@ -189,7 +189,7 @@ table {
 }
 
 #welcome .welcome-menu .menu .links li a:hover {
-  color: red;
+  color: #2cc233;
 }
 
 #welcome .welcome-menu .social-icons {
@@ -201,7 +201,7 @@ table {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: #c2c8cc;
+  background: #000;
   font-size: 0.9rem;
   text-decoration: none;
   color: white;
@@ -213,7 +213,7 @@ table {
 }
 
 #welcome .welcome-menu .social-icons a:hover {
-  background-color: red;
+  background-color: #1dfa28;
 }
 
 #welcome .welcome-menu .location {
@@ -223,13 +223,13 @@ table {
 }
 
 #welcome .welcome-menu .location .address {
-  color: #7a8d99;
+  color: #697177;
   margin-bottom: 20px;
   line-height: 1.7;
 }
 
 #welcome .welcome-menu .location .phone-number a {
-  color: #0971ce;
+  color: #15cf1e;
   font-size: 2rem;
   font-weight: 700;
   text-decoration: none;
@@ -241,11 +241,11 @@ table {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background: #ed4852;
+  background: #1dfa28;
   /* Old browsers */
   /* FF3.6-15 */
   /* Chrome10-25,Safari5.1-6 */
-  background: radial-gradient(ellipse at center, #ed4852 0%, #9c1b24 100%);
+  background: radial-gradient(ellipse at center, #1dfa28 0%, #04b90d 100%);
   /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   overflow: hidden;
   padding: 100px;
@@ -330,13 +330,13 @@ table {
   justify-content: center;
   align-items: center;
   height: 40px;
-  width: 40px;
-  border-radius: 50%;
-  background: #ed4852;
+  width: 60px;
+  border-radius: 10%;
+  background: #0bcc14;
   /* Old browsers */
   /* FF3.6-15 */
   /* Chrome10-25,Safari5.1-6 */
-  background: radial-gradient(ellipse at center, #ed4852 0%, #9c1b24 100%);
+  background: radial-gradient(ellipse at center, #1dfa28 0%, #04b90d 100%);
   /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 }
 
@@ -360,7 +360,7 @@ table {
 }
 
 #food-preview .button-rounded {
-  background: #ed4852;
+  background: #0bcc14;
   color: white;
   display: inline-block;
   padding: 15px;
@@ -376,7 +376,7 @@ table {
 
 #food-preview .container .left-btn,
 #food-preview .container .right-btn {
-  background: red;
+  background: #0bcc14;
   color: white;
   height: 50px;
   width: 50px;
@@ -421,7 +421,7 @@ table {
 }
 
 #food-preview .food-slider .slide:hover .background {
-  background: #f59c2e;
+  background: #f5b92e;
   transform: translate3d(0, -200px, 0);
 }
 
@@ -455,7 +455,7 @@ table {
 }
 
 #food-preview .food-slider .slide .content .food-title {
-  color: #ed4852;
+  color: #0bcc14;
   font-size: 2rem;
   font-weight: 900;
   margin-bottom: 3rem;
