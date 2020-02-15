@@ -1,4 +1,4 @@
-<div class="welcome-menu">
+<div class="side-menu">
     <div class="logo">
         <a href="/">
             <img src="img/logo.png">
