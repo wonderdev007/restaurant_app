@@ -1,121 +1,10 @@
-<!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+@extends('layouts.landing')
 
-        <title>Laravel</title>
+@section('title', 'Page Title')
 
-        <!-- Fonts -->
-        <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
-
-        <!-- Styles -->
-        <link rel="stylesheet" href="/css/app.css">
-        <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
-    integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-        <style>
-            html, body {
-                background-color: #fff;
-                color: #636b6f;
-                font-family: 'Nunito', sans-serif;
-                font-weight: 200;
-                height: 100vh;
-                margin: 0;
-            }
-
-            .full-height {
-                height: 100vh;
-            }
-
-            .flex-center {
-                align-items: center;
-                display: flex;
-                justify-content: center;
-            }
-
-            .position-ref {
-                position: relative;
-            }
-
-            .top-right {
-                position: absolute;
-                right: 10px;
-                top: 18px;
-            }
-
-            .content {
-                text-align: center;
-            }
-
-            .title {
-                font-size: 84px;
-            }
-
-            .links > a {
-                color: #636b6f;
-                padding: 0 25px;
-                font-size: 13px;
-                font-weight: 600;
-                letter-spacing: .1rem;
-                text-decoration: none;
-                text-transform: uppercase;
-            }
-
-            .m-b-md {
-                margin-bottom: 30px;
-            }
-        </style>
-    </head>
-    <body>
-        <section id="welcome">
-            <div class="welcome-menu">
-            <div class="logo">
-                <img src="img/logo.png">
-            </div>
-            <div class="menu">
-                <div class="menu-title">
-                    Menu
-                </div>
-                <ul class="links">
-                    <li>
-                        <a href="#">Menu</a>
-                    </li>
-                    <li>
-                        <a href="#">Waitlist</a>
-                    </li>
-                    <li>
-                        <a href="#">Offers</a>
-                    </li>
-                    <li>
-                        <a href="#">Giftcards</a>
-                    </li>
-                </ul>
-            </div>
-            <div class="social-icons">
-                <a href="#">
-                <i class="fa fa-facebook" aria-hidden="true"></i>
-                </a>
-                <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-                <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-            </div>
-            <div class="location">
-                <div class="address">
-                23 Change Alley,<br>
-               London,EC9V 9AY
-                </div>
-                <div class="phone-number">
-                <a href="tel:020 7946 08002">020 7946 0800</a>
-                </div>
-            </div>
-            </div>
-            <div class="welcome-jumbo">
-            <div class="status">NEW</div>
-            <h1>Beef Burger</h1>
-            <img src="img/hamburger-and-fries.png" class="burger-fries">
-            </div>
-        </section>
-        <section id="information">
-            <div class="restaurant-image">
+@section('content')
+    <section id="information">
+        <div class="restaurant-image">
             <img src="img/top-down.jpg">
             </div>
             <div class="info">
@@ -260,5 +149,4 @@
             </div>
 
         </section>
-    </body>
-</html>
+@endsection
