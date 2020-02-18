@@ -7,7 +7,7 @@
         <div class="content-box">
             <div class="row">
                 <div class="col-md-6 mx-auto">
-                    <h1 class="about-page__title">Get On The List</h1>
+                    <h1 class="waitlist-page__title text-center">Get On The List</h1>
 
                     <form>
                         <div class="form-group">
@@ -43,7 +43,7 @@
                         </div>
                     </form>
                     <div class="mt-5">
-                        <p>Please Note: This is not a reservation. You will be added to the current wait list. You may have a short wait once you arrive while we prepare your table.</p>
+                        <p class="text-center">Please Note: This is not a reservation. You will be added to the current wait list. You may have a short wait once you arrive while we prepare your table.</p>
                     </div>
                 </div>
             </div>

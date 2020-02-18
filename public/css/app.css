@@ -214,7 +214,7 @@ table {
 }
 
 .waitlist-page {
-  padding: 10rem;
+  padding: 6rem;
 }
 
 .waitlist-page__title {
@@ -233,11 +233,47 @@ table {
     padding: 50px 20px;
     overflow: visible;
   }
+
+  .waitlist-page__title {
+    font-size: 1.8rem;
+  }
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
   .waitlist-page {
     padding: 50px 20px;
+  }
+}
+
+.offers-page {
+  padding: 6rem;
+}
+
+.offers-page__title {
+  margin-bottom: 2rem;
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.offers-page__text {
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+@media (max-width: 767px) {
+  .offers-page {
+    padding: 50px 0px;
+    overflow: visible;
+  }
+
+  .offers-page__title {
+    font-size: 1.8rem;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .offers-page__title {
+    font-size: 2rem;
   }
 }
 

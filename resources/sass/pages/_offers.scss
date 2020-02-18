@@ -1,4 +1,4 @@
-.waitlist-page {
+.offers-page {
     padding: 6rem;
 
     &__title {
@@ -16,8 +16,8 @@
 
 // Small devices (landscape phones, 576px and up)
 @media (max-width: 767px) {
-    .waitlist-page {
-        padding: 50px 20px;
+    .offers-page {
+        padding: 50px 0px;
         overflow: visible;
 
         &__title {
@@ -28,8 +28,10 @@
 
 // Medium devices (tablets, 768px and up)
 @media (min-width: 768px) and (max-width: 991px) {
-    .waitlist-page {
-        padding: 50px 20px;
+    .offers-page {
+        &__title {
+            font-size: 2rem;
+        }
     }
 }
 
