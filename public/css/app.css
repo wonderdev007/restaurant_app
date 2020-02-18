@@ -213,6 +213,10 @@ table {
   }
 }
 
+.waitlist-page {
+  padding: 10rem;
+}
+
 .waitlist-page__title {
   margin-bottom: 2rem;
   font-size: 3rem;
