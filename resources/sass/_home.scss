@@ -1,50 +1,51 @@
 .welcome-jumbo {
-        max-width: calc(100vw - 350px);
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        background: #1dfa28;
-        /* Old browsers */
-        background: -moz-radial-gradient(center,
-                ellipse cover,
-                #1dfa28 0%,
-                #04b90d 100%);
-        /* FF3.6-15 */
-        background: -webkit-radial-gradient(center,
-                ellipse cover,
-                #1dfa28 0%,
-                #04b90d 100%);
-        /* Chrome10-25,Safari5.1-6 */
-        background: radial-gradient(ellipse at center,
-                #1dfa28 0%,
-                #04b90d 100%);
-        /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-        overflow: hidden;
-        padding: 100px;
+    transform: translate3d(20rem, 0, 0);
+    max-width: calc(100vw - 20rem);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: #1dfa28;
+    /* Old browsers */
+    background: -moz-radial-gradient(center,
+        ellipse cover,
+        #1dfa28 0%,
+        #04b90d 100%);
+    /* FF3.6-15 */
+    background: -webkit-radial-gradient(center,
+        ellipse cover,
+        #1dfa28 0%,
+        #04b90d 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: radial-gradient(ellipse at center,
+        #1dfa28 0%,
+        #04b90d 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    overflow: hidden;
+    padding: 100px;
 
-        .status {
-            display: inline-block;
-            padding: 10px 16px;
-            font-size: 1.6rem;
-            font-weight: 700;
-            color: white;
-            background: black;
-            border-radius: 5px;
-            align-self: flex-start;
-            margin-bottom: 20px;
-        }
-
-        h1 {
-            font-size: 5rem;
-            font-weight: 900;
-            align-self: flex-start;
-            color: white;
-            margin-bottom: 100px;
-        }
-
-        .burger-fries {
-            width: 100%;
-            position: relative;
-        }
+    &__status {
+        display: inline-block;
+        padding: 10px 16px;
+        font-size: 1.6rem;
+        font-weight: 700;
+        color: white;
+        background: black;
+        border-radius: 5px;
+        align-self: flex-start;
+        margin-bottom: 20px;
     }
+
+    &__title {
+        font-size: 5rem;
+        font-weight: 900;
+        align-self: flex-start;
+        color: white;
+        margin-bottom: 100px;
+    }
+
+    &__burger-fries {
+        width: 100%;
+        position: relative;
+    }
+}

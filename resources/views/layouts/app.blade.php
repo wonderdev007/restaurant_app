@@ -15,10 +15,10 @@
     integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     </head>
     <body>
-        <section id="app-layout">
+        <section class="app-layout">
             @include('includes.side-menu')
 
-            <section id="content-section">
+            <section class="app-layout__content-section">
                 @yield('content')
             </section>
         </section>

@@ -15,17 +15,17 @@
     integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     </head>
     <body>
-        <section id="app-layout">
+        <section class="app-layout">
             @include('includes.side-menu')
 
             <div class="welcome-jumbo">
-                <div class="status">NEW</div>
-                <h1>Beef Burger</h1>
-                <img src="img/hamburger-and-fries.png" class="burger-fries">
+                <div class="welcome-jumbo__status">NEW</div>
+                <h1 class="welcome-jumbo__title">Beef Burger</h1>
+                <img src="img/hamburger-and-fries.png" class="welcome-jumbo__burger-fries">
             </div>
         </section>
 
-        @yield('content');
+        @yield('content')
 
     </body>
 </html>
