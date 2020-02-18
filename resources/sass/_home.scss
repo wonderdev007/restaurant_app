@@ -5,21 +5,21 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background: #1dfa28;
+    background: $primary-color-light;
     /* Old browsers */
     background: -moz-radial-gradient(center,
-        ellipse cover,
-        #1dfa28 0%,
-        #04b90d 100%);
+            ellipse cover,
+            $primary-color-light 0%,
+            $primary-color 100%);
     /* FF3.6-15 */
     background: -webkit-radial-gradient(center,
-        ellipse cover,
-        #1dfa28 0%,
-        #04b90d 100%);
+            ellipse cover,
+            $primary-color-light 0%,
+            $primary-color 100%);
     /* Chrome10-25,Safari5.1-6 */
     background: radial-gradient(ellipse at center,
-        #1dfa28 0%,
-        #04b90d 100%);
+            $primary-color-light 0%,
+            $primary-color 100%);
     /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
     overflow: hidden;
     padding: 100px;

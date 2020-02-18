@@ -1,9 +1,11 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700");
 @import url('https://fonts.googleapis.com/css?family=Proza+Libre:400,500&display=swap');
 @import "bootstrap.min.css";
+@import "variables";
 @import "reset";
 @import "home";
 @import "pages/about";
+@import "pages/waitlist";
 
 body {
     line-height: 1;
@@ -37,6 +39,42 @@ table {
 p {
     font-family: 'Montserrat', sans-serif;
 
+}
+
+input[type="text"],
+input[type="email"],
+select {
+    outline: none;
+    box-shadow: none !important;
+    border: 1px solid #ccc !important;
+}
+
+button {
+    outline: none;
+    box-shadow: none !important;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+select:focus,
+button:focus {
+    border: 1px solid $darker-green !important;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    color: $dark-color;
+}
+
+.button {
+    background-color: $darker-green;
+    color: #fff;
+
+    &:hover {
+        background-color: $darker-green-2;
+    }
 }
 
 .app-layout {
@@ -74,7 +112,6 @@ p {
 
     &__menu-title {
         text-transform: uppercase;
-        color: #000;
         font-weight: bold;
         font-size: 1.2rem;
         border-bottom: 1px solid #e2eaef;
@@ -86,7 +123,7 @@ p {
         li {
             a {
                 font-size: 1.1rem;
-                color: black;
+                color: $dark-color;
                 font-weight: 700;
                 text-decoration: none;
                 margin-bottom: 2rem;
@@ -94,7 +131,7 @@ p {
                 transition: color 0.3s ease-in-out;
 
                 &:hover {
-                    color: #2cc233;
+                    color: $primary-color;
                 }
             }
         }
@@ -120,7 +157,7 @@ p {
             transition: 0.4s;
 
             &:hover {
-                background-color: #1dfa28;
+                background-color: $primary-color-light;
             }
         }
     }
@@ -150,22 +187,22 @@ p {
         transform: translate3d(20rem, 0, 0);
         max-width: calc(100vw - 20rem);
         height: 100%;
-        background: #1dfa28;
+        background: $primary-color-light;
 
         /* Old browsers */
         background: -moz-radial-gradient(center,
                 ellipse cover,
-                #1dfa28 0%,
-                #04b90d 100%);
+                $primary-color-light 0%,
+                $primary-color 100%);
         /* FF3.6-15 */
         background: -webkit-radial-gradient(center,
                 ellipse cover,
-                #1dfa28 0%,
-                #04b90d 100%);
+                $primary-color-light 0%,
+                $primary-color 100%);
         /* Chrome10-25,Safari5.1-6 */
         background: radial-gradient(ellipse at center,
-                #1dfa28 0%,
-                #04b90d 100%);
+                $primary-color-light 0%,
+                $primary-color 100%);
         /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
         overflow: hidden;
     }
@@ -555,3 +592,9 @@ h2 {
 
 // Extra large devices (large desktops, 1200px and up)
 @media (min-width: 1200px) {}
+
+
+.content-box {
+    background-color: #fff;
+    padding: 8% 4rem;
+}

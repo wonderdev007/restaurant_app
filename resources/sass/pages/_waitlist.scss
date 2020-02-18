@@ -1,5 +1,5 @@
-.about-page {
-    padding: 10rem;
+.waitlist-page {
+    // padding: 10rem;
 
     &__title {
         margin-bottom: 2rem;
@@ -11,11 +11,12 @@
         font-size: 1.1rem;
         line-height: 1.6;
     }
+
 }
 
 // Small devices (landscape phones, 576px and up)
 @media (max-width: 767px) {
-    .about-page {
+    .waitlist-page {
         padding: 50px 20px;
         overflow: visible;
     }
@@ -23,7 +24,7 @@
 
 // Medium devices (tablets, 768px and up)
 @media (min-width: 768px) and (max-width: 991px) {
-    .about-page {
+    .waitlist-page {
         padding: 50px 20px;
     }
 }

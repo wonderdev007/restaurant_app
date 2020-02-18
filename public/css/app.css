@@ -63,7 +63,6 @@ ul,
 li,
 fieldset,
 form,
-label,
 legend,
 table,
 caption,
@@ -194,17 +193,11 @@ table {
   margin-bottom: 2rem;
   font-size: 3rem;
   font-weight: 700;
-  color: #000;
 }
 
 .about-page__text {
   font-size: 1.1rem;
   line-height: 1.6;
-}
-
-.about-page__content-box {
-  background-color: #fff;
-  padding: 2rem;
 }
 
 @media (max-width: 767px) {
@@ -216,6 +209,30 @@ table {
 
 @media (min-width: 768px) and (max-width: 991px) {
   .about-page {
+    padding: 50px 20px;
+  }
+}
+
+.waitlist-page__title {
+  margin-bottom: 2rem;
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.waitlist-page__text {
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+@media (max-width: 767px) {
+  .waitlist-page {
+    padding: 50px 20px;
+    overflow: visible;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .waitlist-page {
     padding: 50px 20px;
   }
 }
@@ -253,6 +270,42 @@ p {
   font-family: "Montserrat", sans-serif;
 }
 
+input[type=text],
+input[type=email],
+select {
+  outline: none;
+  box-shadow: none !important;
+  border: 1px solid #ccc !important;
+}
+
+button {
+  outline: none;
+  box-shadow: none !important;
+}
+
+input[type=text]:focus,
+input[type=email]:focus,
+select:focus,
+button:focus {
+  border: 1px solid #039c0a !important;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  color: #2e2d2d;
+}
+
+.button {
+  background-color: #039c0a;
+  color: #fff;
+}
+
+.button:hover {
+  background-color: #03ca0d;
+}
+
 .app-layout {
   display: grid;
   width: 100%;
@@ -286,7 +339,6 @@ p {
 
 .app-layout__menu-title {
   text-transform: uppercase;
-  color: #000;
   font-weight: bold;
   font-size: 1.2rem;
   border-bottom: 1px solid #e2eaef;
@@ -296,7 +348,7 @@ p {
 
 .app-layout__links li a {
   font-size: 1.1rem;
-  color: black;
+  color: #2e2d2d;
   font-weight: 700;
   text-decoration: none;
   margin-bottom: 2rem;
@@ -305,7 +357,7 @@ p {
 }
 
 .app-layout__links li a:hover {
-  color: #2cc233;
+  color: #04b90d;
 }
 
 .app-layout__social-icons {
@@ -730,5 +782,10 @@ h2 {
   .food-preview__slide {
     width: 50%;
   }
+}
+
+.content-box {
+  background-color: #fff;
+  padding: 8% 4rem;
 }
 

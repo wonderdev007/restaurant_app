@@ -4,7 +4,7 @@
 
 @section('content')
     <div class="about-page">
-        <div class="about-page__content-box">
+        <div class="content-box">
             <div class="row">
                 <div class="col-md-6">
                     <h1 class="about-page__title">About Us</h1>
