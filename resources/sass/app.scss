@@ -5,6 +5,7 @@
 @import "reset";
 @import "home";
 @import "pages/about";
+@import "menu/index";
 @import "pages/waitlist";
 @import "pages/offers";
 
@@ -531,7 +532,7 @@ h2 {
             max-width: 100vw;
             padding: 20px;
             transform: translate3d(0, 0, 0);
-            overflow-y: scroll;
+            // overflow-y: scroll;
         }
     }
 
