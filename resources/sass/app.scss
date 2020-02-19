@@ -6,6 +6,7 @@
 @import "home";
 @import "pages/about";
 @import "menu/index";
+@import "menu/single-menu";
 @import "pages/waitlist";
 @import "pages/offers";
 
@@ -104,10 +105,8 @@ h4 {
         max-width: 100px;
     }
 
-
     &__menu {
         margin-top: 50px;
-
         margin-bottom: 80px;
         text-align: center;
     }
@@ -599,4 +598,21 @@ h2 {
 .content-box {
     background-color: #fff;
     padding: 8% 4rem;
+
+    // Small devices
+    @media (max-width: 767px) {
+        padding: 8% 2rem;
+    }
+
+    // Medium devices (tablets, 768px and up)
+    @media (min-width: 768px) and (max-width: 991px) {
+        .single-menu-page {
+            padding: 50px 10px;
+        }
+    }
+
+    // Large devices (desktops, 992px and up)
+    @media (min-width: 992px) and (max-width: 1199px) {
+        padding: 8% 2rem;
+    }
 }
