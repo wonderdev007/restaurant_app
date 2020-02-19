@@ -27,7 +27,7 @@
                   <div id="submenu-2" class="collapse submenu" style="">
                     <ul class="nav flex-column">
                       <li class="nav-item">
-                        <a class="nav-link" href="admin/food-categories">Food Categories
+                        <a class="nav-link" href="/admin/food-categories">Food Categories
                           <span class="badge badge-secondary">New</span></a>
                       </li>
                       <li class="nav-item">
