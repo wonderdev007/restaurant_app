@@ -11,7 +11,7 @@
                 </li>
                 <li class="nav-item ">
                   <a class="nav-link" href="#" data-toggle="collapse" aria-expanded="false" data-target="#submenu-1" aria-controls="submenu-1">
-                    <i class="fa fa-fw fa-user-circle"></i>Dashboard
+                    <i class="fa fa-fw fa-chart-line"></i>Dashboard
                     <span class="badge badge-success">6</span></a>
                   <div id="submenu-1" class="collapse submenu" style="">
                     <ul class="nav flex-column">
@@ -23,7 +23,7 @@
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="#" data-toggle="collapse" aria-expanded="false" data-target="#submenu-2" aria-controls="submenu-2">
-                    <i class="fa fa-fw fa-rocket"></i>Menu</a>
+                    <i class="fa fa-book" aria-hidden="true"></i>Menu</a>
                   <div id="submenu-2" class="collapse submenu" style="">
                     <ul class="nav flex-column">
                       <li class="nav-item">
@@ -39,7 +39,7 @@
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="#" data-toggle="collapse" aria-expanded="false" data-target="#submenu-3" aria-controls="submenu-3">
-                    <i class="fa fa-fw fa-rocket"></i>Customers</a>
+                    <i class="fa fa-fw fa-users"></i>Customers</a>
                   <div id="submenu-3" class="collapse submenu" style="">
                     <ul class="nav flex-column">
                       <li class="nav-item">
@@ -55,7 +55,7 @@
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="#" data-toggle="collapse" aria-expanded="false" data-target="#submenu-4" aria-controls="submenu-4">
-                    <i class="fa fa-fw fa-rocket"></i>Users</a>
+                    <i class="fa fa-fw fa-user-circle"></i>Users</a>
                   <div id="submenu-4" class="collapse submenu" style="">
                     <ul class="nav flex-column">
                       <li class="nav-item">
@@ -71,7 +71,7 @@
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="#" data-toggle="collapse" aria-expanded="false" data-target="#submenu-5" aria-controls="submenu-5">
-                    <i class="fa fa-fw fa-rocket"></i>Settings</a>
+                    <i class="fa fa-fw fa-cog"></i>Settings</a>
                   <div id="submenu-5" class="collapse submenu" style="">
                     <ul class="nav flex-column">
                       <li class="nav-item">
