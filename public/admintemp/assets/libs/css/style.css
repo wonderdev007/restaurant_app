@@ -1958,7 +1958,7 @@ Splash Container / Wrapper
 
 .splash-container {
     width: 100%;
-    max-width: 375px;
+    max-width: 600px;
     padding: 15px;
     margin: auto;
 }
