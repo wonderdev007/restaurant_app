@@ -35,7 +35,7 @@
                                         <span class="badge badge-secondary">New</span></a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" href="/admin/food-categories/create">Create Food Categories
+                                        <a class="nav-link" href="/admin/food-categories/create">Create Food Category
                                         <span class="badge badge-secondary">New</span></a>
                                     </li>
                                 </ul>
