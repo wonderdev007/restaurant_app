@@ -396,14 +396,6 @@ p {
   font-family: "Montserrat", sans-serif;
 }
 
-input[type=text],
-input[type=email],
-select {
-  outline: none;
-  box-shadow: none !important;
-  border: 1px solid #ccc !important;
-}
-
 button {
   outline: none;
   box-shadow: none !important;
@@ -411,17 +403,14 @@ button {
 
 input[type=text]:focus,
 input[type=email]:focus,
+input[type=password]:focus,
+select,
 select:focus,
 button:focus {
+  outline: none !important;
   border: 1px solid #039c0a !important;
-}
-
-option:hover {
-  background-color: #039c0a !important;
-}
-
-select.decorated option:hover {
-  box-shadow: 0 0 10px 100px #039c0a inset;
+  box-shadow: none !important;
+  box-shadow: inset 0 -1px 0 #ddd;
 }
 
 h1,
