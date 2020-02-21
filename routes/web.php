@@ -17,11 +17,15 @@ Route::get('/menu', 'StaticPagesController@menu');
 Route::get('/menu/{slug}', 'StaticPagesController@singleMenu');
 Route::get('/about', 'StaticPagesController@about');
 Route::get('/contact', 'StaticPagesController@contact');
-Route::get('/waitlist', 'StaticPagesController@waitlist');
+Route::get('/reservations', 'StaticPagesController@reservations');
 Route::get('/offers', 'StaticPagesController@offers');
 
 // Admin Dashboard
 Route::get('/admin', 'admin\AdminController@dashboard');
+
+// Admin Customers
+Route::get('/admin/offers-members', 'admin\CustomersController@allOffersMembers');
+Route::get('/admin/reservations', 'admin\CustomersController@allReservations');
 
 // Admin Food Categories
 Route::get('/admin/food-categories', 'admin\FoodCategoriesController@index');

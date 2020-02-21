@@ -416,6 +416,14 @@ button:focus {
   border: 1px solid #039c0a !important;
 }
 
+option:hover {
+  background-color: #039c0a !important;
+}
+
+select.decorated option:hover {
+  box-shadow: 0 0 10px 100px #039c0a inset;
+}
+
 h1,
 h2,
 h3,

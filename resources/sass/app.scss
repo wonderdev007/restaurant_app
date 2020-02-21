@@ -7,7 +7,7 @@
 @import "pages/about";
 @import "menu/index";
 @import "menu/single-menu";
-@import "pages/waitlist";
+@import "pages/reservations";
 @import "pages/offers";
 
 body {
@@ -62,6 +62,15 @@ input[type="email"]:focus,
 select:focus,
 button:focus {
     border: 1px solid $darker-green !important;
+}
+
+
+option:hover {
+    background-color: $darker-green !important;
+}
+
+select.decorated option:hover {
+    box-shadow: 0 0 10px 100px $darker-green inset;
 }
 
 h1,
