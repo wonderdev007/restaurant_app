@@ -29,6 +29,8 @@ Route::get('/admin/users/create', 'admin\UsersController@create');
 Route::post('/admin/users', 'admin\UsersController@store');
 Route::get('/admin/users/{id}/edit', 'admin\UsersController@showEditData');
 Route::put('/admin/users/{id}', 'admin\UsersController@update');
+Route::get('/admin/users/{id}/delete', 'admin\UsersController@delete');
+
 // Admin Customers
 Route::get('/admin/offers-members', 'admin\CustomersController@allOffersMembers');
 Route::get('/admin/reservations', 'admin\CustomersController@allReservations');
