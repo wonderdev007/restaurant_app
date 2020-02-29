@@ -16,7 +16,9 @@ class UsersController extends Controller
     }
 
     public function index() {
-        return view('admin/users/all');
+        // return $users = User::All();
+        $users = User::paginate(5);
+        return view('admin/users/all', ['users' => $users]);
     }
 
     public function create() {
