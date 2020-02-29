@@ -97,7 +97,7 @@
                                         <div class="row">
                                             <div class="col-sm-6 pl-3">
                                                 <p class="text-left">
-                                                    <button type="submit" class="btn btn-space btn-primary">REGISTER</button>
+                                                    <button type="submit" class="btn btn-space btn-primary">CREATE USER</button>
                                                 </p>
                                             </div>
                                         </div>
