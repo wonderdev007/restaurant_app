@@ -24,7 +24,11 @@ class FoodCategoriesController extends Controller
     }
 
     public function store() {
-        // return request()->all();
+        request()->validate([
+            'title' => ['required', 'string', 'max:255'],
+            'description' => ['required', 'string', 'max:255'],
+            'image_url' => ['required', 'string']
+        ]);
 
         $category = new FoodCategory();
         $category->title = request('title');
