@@ -34,19 +34,42 @@
                             <div class="card">
                                 <h5 class="card-header">Create new category</h5>
                                 <div class="card-body">
-                                    <form action="#" id="basicform" data-parsley-validate="">
+                                    <form method="POST" action="/admin/food-categories">
+                                        @csrf
                                         <div class="form-group">
                                             <label for="inputCategoryName">Category Name</label>
-                                            <input id="inputCategoryName" type="text" name="category" data-parsley-trigger="change" required="" placeholder="Enter category name" autocomplete="off" class="form-control">
+                                            <input id="inputCategoryName" type="text" placeholder="Enter category name" class="form-control @error('title') is-invalid @enderror" name="title" value="{{ old('title') }}" required autocomplete="title" autofocus>
+                                            @error('title')
+                                                <span class="invalid-feedback" role="alert">
+                                                    <strong>{{ $message }}</strong>
+                                                </span>
+                                            @enderror
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label for="inputCategoryDescription">Description</label>
+                                            <textarea id="inputCategoryDescription" type="text" rows="5" placeholder="Enter category description" class="form-control @error('description') is-invalid @enderror" name="description" value="" required autocomplete="description" autofocus>{{ old('description') }}</textarea>
+
+                                            @error('description')
+                                                <span class="invalid-feedback" role="alert">
+                                                    <strong>{{ $message }}</strong>
+                                                </span>
+                                            @enderror
                                         </div>
                                         <div class="form-group">
                                             <label for="inputCategoryImageUrl">Category Image Url</label>
-                                            <input id="inputCategoryImageUrl" type="text" name="image_url" data-parsley-trigger="change" required="" placeholder="http://www.foodcircle.com/img/bugers.jpg" autocomplete="off" class="form-control">
+                                            <input id="inputCategoryImageUrl" type="text" placeholder="/img/bugers.jpg" class="form-control @error('image_url') is-invalid @enderror" name="image_url" value="{{ old('image_url') }}" required autocomplete="image_url" autofocus>
+
+                                            @error('image_url')
+                                                <span class="invalid-feedback" role="alert">
+                                                    <strong>{{ $message }}</strong>
+                                                </span>
+                                            @enderror
                                         </div>
                                         <div class="row">
                                             <div class="col-sm-6 pl-3">
                                                 <p class="text-left">
-                                                    <button type="submit" class="btn btn-space btn-primary">Submit</button>
+                                                    <button type="submit" class="btn btn-space btn-primary">CREATE CATEGORY</button>
                                                 </p>
                                             </div>
                                         </div>
