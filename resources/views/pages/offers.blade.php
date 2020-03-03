@@ -9,26 +9,47 @@
                 <div class="col-xs-12 col-sm-12 col-md-8 col-lg-6 mx-auto">
                     <h1 class="offers-page__title text-center">Sign Up To Receive Offers</h1>
 
-                    <form>
+                    <form method="POST" action="/offers">
+                        @csrf
                         <div class="form-group">
                             <label for="firstnameinput">First Name</label>
-                            <input type="text" class="form-control" id="firstnameinput" name="fname" placeholder="Frank">
+                            <input id="firstnameinput" type="text" placeholder="Frank" class="form-control @error('fname') is-invalid @enderror" name="fname" value="{{ old('fname') }}" required autocomplete="fname" autofocus>
+                            @error('fname')
+                                <span class="invalid-feedback" role="alert">
+                                    <strong>{{ $message }}</strong>
+                                </span>
+                            @enderror
                         </div>
                         <div class="form-group">
                             <label for="lastnameinput">Last Name</label>
-                            <input type="text" class="form-control" id="lastnameinput" name="lname" placeholder="Sinatra">
+                            <input id="lastnameinput" type="text" placeholder="Sinatra" class="form-control @error('lname') is-invalid @enderror" name="lname" value="{{ old('lname') }}" required autocomplete="lname" autofocus>
+                            @error('lname')
+                                <span class="invalid-feedback" role="alert">
+                                    <strong>{{ $message }}</strong>
+                                </span>
+                            @enderror
                         </div>
                         <div class="form-group">
                             <label for="emailinput">Email Address</label>
-                            <input type="email" class="form-control" id="emailinput" name="email" placeholder="name@example.com">
+                            <input id="emailinput" type="email" placeholder="name@example.com" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email" autofocus>
+                            @error('email')
+                                <span class="invalid-feedback" role="alert">
+                                    <strong>{{ $message }}</strong>
+                                </span>
+                            @enderror
                         </div>
                         <div class="form-group">
                             <label for="phoneinput">Phone Number</label>
-                            <input type="text" class="form-control" id="phoneinput" name="phone" placeholder="7915 215 998">
+                            <input id="phoneinput" type="phone_number" placeholder="7915 215 998" class="form-control @error('email') is-invalid @enderror" name="phone_number" value="{{ old('phone_number') }}" required autocomplete="phone_number" autofocus>
+                            @error('phone_number')
+                                <span class="invalid-feedback" role="alert">
+                                    <strong>{{ $message }}</strong>
+                                </span>
+                            @enderror
                         </div>
 
                         <div class="form-group">
-                            <button type="button" class="btn button btn-block">Signup</button>
+                            <button type="submit" class="btn button btn-block">Signup</button>
                         </div>
                     </form>
                     <div class="mt-5">
