@@ -20,7 +20,7 @@ Route::get('/contact', 'StaticPagesController@contact');
 Route::get('/reservations', 'StaticPagesController@reservations');
 Route::get('/offers', 'StaticPagesController@offers');
 Route::post('/offers', 'StaticPagesController@registerMember');
-Route::get('/thank-you', 'StaticPagesController@offersThankYou');
+Route::get('/offers/thank-you', 'StaticPagesController@offersThankYou');
 
 // Admin Dashboard
 Route::get('/admin', 'admin\AdminController@dashboard');
@@ -35,6 +35,7 @@ Route::get('/admin/users/{id}/delete', 'admin\UsersController@delete');
 
 // Admin Members
 Route::get('/admin/members', 'admin\MemberController@index');
+Route::get('/admin/members/{id}/delete', 'admin\MemberController@delete');
 
 // Admin Reservations
 Route::get('/admin/reservations', 'admin\CustomersController@allReservations');

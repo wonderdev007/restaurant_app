@@ -43,18 +43,10 @@
                                     <th scope="col">Phone Number</th>
                                     <th scope="col">Created At</th>
                                     <th scope="col">Updated At</th>
-                                    <th scope="col">Edit</th>
                                     <th scope="col">Delete</th>
                                 </tr>
                             </thead>
                             <tbody>
-                                {{-- <tr>
-                                    <th scope="row">1</th>
-                                    <td>Frank Sinatra</td>
-                                    <td>frankie@gamil.com</td>
-                                    <td>07608 556 789</td>
-                                    <td>2/2/2020</td>
-                                </tr> --}}
 
                                 @foreach ($members as $member)
                                     <tr>
@@ -64,11 +56,6 @@
                                         <td>{{$member->phone_number}}</td>
                                         <td>{{$member->created_at}}</td>
                                         <td>{{$member->updated_at}}</td>
-                                        <td>
-                                            <a href={{"/admin/members/$member->id/edit"}}>
-                                                <i class="fas fa-edit"></i>
-                                            </a>
-                                        </td>
                                         <td>
                                             <a href={{"/admin/members/$member->id/delete"}} onclick="if (!confirm('Are you sure you want to delete this member?')) return false">
                                                 <i class="far fa-trash-alt"></i>
@@ -85,5 +72,8 @@
             <!-- end basic table -->
             <!-- ============================================================== -->
         </div>
+
+        {{ $members->links() }}
+
     </div>
 @endsection
