@@ -41,17 +41,41 @@
                                     <th scope="col">Full Name</th>
                                     <th scope="col">Email</th>
                                     <th scope="col">Phone Number</th>
-                                    <th scope="col">Date Created</th>
+                                    <th scope="col">Created At</th>
+                                    <th scope="col">Updated At</th>
+                                    <th scope="col">Edit</th>
+                                    <th scope="col">Delete</th>
                                 </tr>
                             </thead>
                             <tbody>
-                                <tr>
+                                {{-- <tr>
                                     <th scope="row">1</th>
                                     <td>Frank Sinatra</td>
                                     <td>frankie@gamil.com</td>
                                     <td>07608 556 789</td>
                                     <td>2/2/2020</td>
-                                </tr>
+                                </tr> --}}
+
+                                @foreach ($members as $member)
+                                    <tr>
+                                        <th scope="row">{{$member->id}}</th>
+                                        <td>{{$member->fname}} {{$member->lname}}</td>
+                                        <td>{{$member->email}}</td>
+                                        <td>{{$member->phone_number}}</td>
+                                        <td>{{$member->created_at}}</td>
+                                        <td>{{$member->updated_at}}</td>
+                                        <td>
+                                            <a href={{"/admin/members/$member->id/edit"}}>
+                                                <i class="fas fa-edit"></i>
+                                            </a>
+                                        </td>
+                                        <td>
+                                            <a href={{"/admin/members/$member->id/delete"}} onclick="if (!confirm('Are you sure you want to delete this member?')) return false">
+                                                <i class="far fa-trash-alt"></i>
+                                            </a>
+                                        </td>
+                                    </tr>
+                                @endforeach
                             </tbody>
                         </table>
                     </div>
