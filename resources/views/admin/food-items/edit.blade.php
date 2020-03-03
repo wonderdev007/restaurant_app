@@ -71,7 +71,7 @@
 
                                         <div class="form-group">
                                             <label for="inputItemImageUrl">Image Url</label>
-                                            <input id="inputItemImageUrl" type="text" placeholder="Enter item url image" class="form-control @error('image_url') is-invalid @enderror" name="image_url" value="{{ old('image_url', $food_item->image_url) }}" required autocomplete="image_url" autofocus>
+                                            <input id="inputItemImageUrl" type="text" placeholder="Enter item url image" class="form-control @error('image_url') is-invalid @enderror" name="image_url" value="{{ old('image_url', $food_item->image_url) }}" autocomplete="image_url" autofocus>
 
                                             @error('image_url')
                                                 <span class="invalid-feedback" role="alert">
