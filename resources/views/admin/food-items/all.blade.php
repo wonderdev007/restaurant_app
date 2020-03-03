@@ -46,22 +46,26 @@
                                 </tr>
                             </thead>
                             <tbody>
-                                <tr>
-                                    <th scope="row">1</th>
-                                    <td>Texas Burger</td>
-                                    <td>$9</td>
-                                    <td>2/2/2020</td>
-                                    <td>
-                                        <a href="/admin/food-items/1/edit">
-                                            <i class="fas fa-edit"></i>
-                                        </a>
-                                    </td>
-                                    <td>
-                                        <a href="/admin/food-items/1/delete" onclick="if (!confirm('Are you sure you want to delete this item?')) return false">
-                                            <i class="far fa-trash-alt"></i>
-                                        </a>
-                                    </td>
-                                </tr>
+
+                                @foreach ($food_items as $food_item)
+                                    <tr>
+                                        <th scope="row">{{$food_item->id}}</th>
+                                        <td>{{$food_item->title}}</td>
+                                        <td>{{$food_item->price}}</td>
+                                        <td>{{$food_item->created_at}}</td>
+                                        <td>{{$food_item->updated_at}}</td>
+                                        <td>
+                                            <a href={{"/admin/food-items/$food_item->id/edit"}}>
+                                                <i class="fas fa-edit"></i>
+                                            </a>
+                                        </td>
+                                        <td>
+                                            <a href={{"/admin/food-items/$food_item->id/delete"}} onclick="if (!confirm('Are you sure you want to delete this item?')) return false">
+                                                <i class="far fa-trash-alt"></i>
+                                            </a>
+                                        </td>
+                                    </tr>
+                                @endforeach
                             </tbody>
                         </table>
                     </div>

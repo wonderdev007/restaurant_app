@@ -47,7 +47,10 @@ Route::get('/admin/food-categories/{id}/delete', 'admin\FoodCategoriesController
 // Admin Food Items
 Route::get('/admin/food-items', 'admin\FoodItemsController@index');
 Route::get('/admin/food-items/create', 'admin\FoodItemsController@create');
-Route::get('/admin/food-items/{id}/edit', 'admin\FoodItemsController@edit');
+Route::post('/admin/food-items/', 'admin\FoodItemsController@store');
+Route::get('/admin/food-items/{id}/edit', 'admin\FoodItemsController@showEditItem');
+Route::put('/admin/food-items/{id}', 'admin\FoodItemsController@update');
+Route::get('/admin/food-items/{id}/delete', 'admin\FoodItemsController@delete');
 
 // Admin Authentication
 Route::get('/admin/register', function () {

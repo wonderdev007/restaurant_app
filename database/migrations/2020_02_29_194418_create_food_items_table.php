@@ -17,8 +17,8 @@ class CreateFoodItemsTable extends Migration
             $table->bigIncrements('id');
             $table->string('title');
             $table->text('description');
-            $table->text('image_url');
-            $table->float('price',8, 2);
+            $table->text('image_url')->nullable();
+            $table->float('price', 8, 2);
             $table->bigInteger('category_id')->unsigned()->nullable();
             $table->timestamps();
         });
