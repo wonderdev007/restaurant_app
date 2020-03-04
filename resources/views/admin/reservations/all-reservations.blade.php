@@ -47,15 +47,22 @@
                                 </tr>
                             </thead>
                             <tbody>
-                                <tr>
-                                    <th scope="row">1</th>
-                                    <td>Frank Sinatra</td>
-                                    <td>frankie@gmail.com</td>
-                                    <td>07608 556 789</td>
-                                    <td>4</td>
-                                    <td>6:00 PM</td>
-                                    <td>2/2/2020</td>
-                                </tr>
+
+                                @foreach ($reservations as $reservation)
+                                    <tr>
+                                        <th scope="row">{{$reservation->id}}</th>
+                                        <td>{{$reservation->fname}} {{$reservation->lname}}</td>
+                                        <td>{{$reservation->email}}</td>
+                                        <td>{{$reservation->phone_number}}</td>
+                                        <td>{{$reservation->created_at}}</td>
+                                        <td>{{$reservation->updated_at}}</td>
+                                        <td>
+                                            <a href={{"/admin/reservations/$reservation->id/delete"}} onclick="if (!confirm('Are you sure you want to delete this reservation?')) return false">
+                                                <i class="far fa-trash-alt"></i>
+                                            </a>
+                                        </td>
+                                    </tr>
+                                @endforeach
                             </tbody>
                         </table>
                     </div>
@@ -65,5 +72,8 @@
             <!-- end basic table -->
             <!-- ============================================================== -->
         </div>
+
+        {{ $reservations->links() }}
+
     </div>
 @endsection

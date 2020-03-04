@@ -14,7 +14,7 @@ class ReservationController extends Controller
 
     public function index() {
         $reservations = Reservation::paginate(5);
-        return view('admin/reservation/all', ['reservations' => $reservations]);
+        return view('admin/reservations/all-reservations', ['reservations' => $reservations]);
     }
 
     public function create() {
@@ -44,7 +44,7 @@ class ReservationController extends Controller
         return redirect('/admin/reservations');
     }
 
-    public function showEditCategories($id) {
+    public function showEditReservations($id) {
         $reservation = Reservation::find($id);
 
         return view('admin/reservations/edit', ['reservation' => $reservation]);
