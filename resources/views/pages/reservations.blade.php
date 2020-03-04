@@ -9,45 +9,81 @@
                 <div class="col-md-6 mx-auto">
                     <h1 class="waitlist-page__title text-center">Reserve a Table</h1>
 
-                    <form>
+                    <form method="POST" action="/reservations">
+                        @csrf
+
                         <div class="form-group">
                             <label for="firstnameinput">First Name</label>
-                            <input type="text" class="form-control" id="firstnameinput" name="fname" placeholder="Frank">
+                            <input id="firstnameinput" type="text" placeholder="Frank" class="form-control @error('fname') is-invalid @enderror" name="fname" value="{{ old('fname') }}" required autocomplete="fname" autofocus>
+                            @error('fname')
+                                <span class="invalid-feedback" role="alert">
+                                    <strong>{{ $message }}</strong>
+                                </span>
+                            @enderror
                         </div>
+
                         <div class="form-group">
                             <label for="lastnameinput">Last Name</label>
-                            <input type="text" class="form-control" id="lastnameinput" name="lname" placeholder="Sinatra">
+                            <input id="lastnameinput" type="text" placeholder="Sinatra" class="form-control @error('lname') is-invalid @enderror" name="lname" value="{{ old('lname') }}" required autocomplete="lname" autofocus>
+                            @error('lname')
+                                <span class="invalid-feedback" role="alert">
+                                    <strong>{{ $message }}</strong>
+                                </span>
+                            @enderror
                         </div>
+
                         <div class="form-group">
                             <label for="emailinput">Email Address</label>
-                            <input type="email" class="form-control" id="emailinput" name="email" placeholder="name@example.com">
+                            <input id="emailinput" type="email" placeholder="name@example.com" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email" autofocus>
+                            @error('email')
+                                <span class="invalid-feedback" role="alert">
+                                    <strong>{{ $message }}</strong>
+                                </span>
+                            @enderror
                         </div>
+
                         <div class="form-group">
                             <label for="phoneinput">Phone Number</label>
-                            <input type="text" class="form-control" id="phoneinput" name="phone" placeholder="7915 215 998">
+                            <input id="phoneinput" type="tel" placeholder="Enter phone number" class="form-control @error('phone_number') is-invalid @enderror" name="phone_number" value="{{ old('phone_number') }}" required autocomplete="phone_number" autofocus>
+                            @error('phone_number')
+                                <span class="invalid-feedback" role="alert">
+                                    <strong>{{ $message }}</strong>
+                                </span>
+                            @enderror
                         </div>
+
                         <div class="form-group">
                             <label for="guestinput">How Many Guests</label>
-                            <select class="form-control" id="guestinput" name="guests">
+                            <select class="form-control @error('guests_total') is-invalid @enderror" id="guestinput" name="guests_total">
                                 <option>1</option>
                                 <option>2</option>
                                 <option>3</option>
                                 <option>4</option>
                                 <option>5</option>
                             </select>
+                            @error('guests_total')
+                                <span class="invalid-feedback" role="alert">
+                                    <strong>{{ $message }}</strong>
+                                </span>
+                            @enderror
                         </div>
                         <div class="form-group">
                             <label for="timeinput">What Time?</label>
-                            <select class="form-control" id="timeinput" name="time">
+                            <select class="form-control @error('reservation_time') is-invalid @enderror" id="timeinput" name="reservation_time">
                                 <option vlaue="6">6:00 PM</option>
                                 <option vlaue="7">7:00 PM</option>
                                 <option vlaue="8">8:00 PM</option>
                                 <option vlaue="9">9:00 PM</option>
                                 <option vlaue="10">10:00 PM</option>
                             </select>
+                            @error('reservation_time')
+                                <span class="invalid-feedback" role="alert">
+                                    <strong>{{ $message }}</strong>
+                                </span>
+                            @enderror
                         </div>
                         <div class="form-group">
-                            <button type="button" class="btn button btn-block">Confirm</button>
+                            <button type="submit" class="btn button btn-block">Confirm</button>
                         </div>
                     </form>
                     <div class="mt-5">
