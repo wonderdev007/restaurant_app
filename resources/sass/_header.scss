@@ -1,0 +1,289 @@
+.header-area {
+    position: absolute;
+    left: 0;
+    right: 0;
+    width: 100%;
+    top: 0;
+    z-index: 9;
+
+    // padding-top: 28px;
+    @media #{$mobile_device} {
+        padding-top: 0;
+    }
+
+    @media #{$tablet_device} {
+        padding-top: 0;
+    }
+
+    .main-header-area {
+        padding: 0 150px;
+
+        @media #{$mobile_device} {
+            padding: 10px 10px;
+        }
+
+        @media #{$tablet_device} {
+            padding: 10px 10px;
+        }
+
+        @media #{$mid_device} {
+            padding: 0 20px;
+        }
+
+        @media #{$large_device} {
+            padding: 0 10px;
+        }
+
+        .logo-img {
+            text-align: center;
+
+            @media #{$mobile_device} {
+                // padding-left: 20px;
+                text-align: left;
+            }
+
+            @media #{$tablet_device} {
+                text-align: left;
+            }
+
+            @media #{$mid_device} {
+                text-align: left;
+            }
+
+            img {
+                width: 100px;
+
+                @media #{$mobile_device} {
+                    width: 60px;
+                }
+
+                @media #{$tablet_device} {
+                    width: 70px;
+                }
+
+                @media #{$mid_device} {
+                    width: 100%;
+                }
+
+            }
+        }
+
+        .book_room {
+            @include flexbox();
+            @include align-items(center);
+            @include justify-content(flex-end);
+
+            .social_links {
+                ul {
+                    li {
+                        display: inline-block;
+
+                        a {
+                            color: #fff;
+                            margin: 0 10px;
+                            font-size: 20px;
+
+                            &:hover {
+                                color: rgb(247, 197, 61);
+                            }
+                        }
+                    }
+                }
+            }
+
+            .book_btn {
+                margin-left: 15px;
+
+                a {
+                    background: transparent;
+                    padding: 12px 26px;
+                    font-size: 18px;
+                    font-weight: 400;
+                    border: 1px solid#F2C64D;
+                    color: rgb(247, 197, 61);
+                    border-radius: 30px;
+                    font-family: 'Montserrat', sans-serif;
+
+                    &:hover {
+                        // background: rgb(247, 197, 61);
+                        color: #fff;
+                        border: 1px solid rgb(247, 197, 61);
+                    }
+                }
+            }
+        }
+
+        .main-menu {
+
+            // padding: 12px 0;
+            ul {
+                li {
+                    display: inline-block;
+                    position: relative;
+                    margin-right: 45px;
+
+                    @media #{$mid_device} {
+                        margin-right: 12px;
+                    }
+
+                    @media #{$large_device} {
+                        margin-right: 15px;
+                    }
+
+                    a {
+                        color: #fff;
+                        font-size: 19px;
+                        text-transform: capitalize;
+                        font-weight: 400;
+                        display: inline-block;
+                        padding: 0px 0px 10px 0px;
+                        // font-family: $font3;
+                        position: relative;
+                        text-transform: capitalize;
+
+                        @media #{$mid_device} {
+                            // padding: 41px 0px 10px 0px;
+                            font-size: 15px;
+                        }
+
+                        @media #{$large_device} {
+                            // padding: 41px 0px 10px 0px;
+                            font-size: 15px;
+                        }
+
+                        i {
+                            font-size: 9px;
+
+                            @media #{$mobile_device} {
+                                display: none !important;
+                            }
+
+                            @media #{$tablet_device} {
+                                display: none !important;
+                                ;
+                            }
+                        }
+
+                        &::before {
+                            position: absolute;
+                            content: "";
+                            background: rgb(247, 197, 61);
+                            width: 100%;
+                            height: 2px;
+                            bottom: 0;
+                            left: 0;
+                            opacity: 0;
+                            transform: scaleX(0);
+                            @include transition(.3s);
+                        }
+
+                        &:hover::before {
+                            opacity: 1;
+                            transform: scaleX(1);
+                        }
+
+                        &.active {
+                            background: rgb(247, 197, 61);
+
+                            &::before {
+                                opacity: 1;
+                                transform: scaleX(1);
+                            }
+                        }
+
+                        &:hover {
+                            color: rgb(247, 197, 61);
+                        }
+                    }
+
+                    .submenu {
+                        position: absolute;
+                        left: 0;
+                        top: 140%;
+                        background: #fff;
+                        width: 200px;
+                        z-index: 2;
+                        box-shadow: 0 0 10px rgba(0, 0, 0, .02);
+                        opacity: 0;
+                        visibility: hidden;
+                        text-align: left;
+                        @include transition(.6s);
+
+                        li {
+                            display: block;
+
+                            a {
+                                padding: 10px 15px;
+                                position: inherit;
+                                @include transition(.3s);
+                                display: block;
+                                color: #000;
+
+                                &::before {
+                                    display: none;
+                                }
+                            }
+
+                            &:hover a {
+                                color: #000;
+                            }
+                        }
+                    }
+
+                    &:hover>.submenu {
+                        opacity: 1;
+                        visibility: visible;
+                        top: 100%;
+                    }
+
+                    &:hover>a::before {
+                        opacity: 1;
+                        transform: scaleX(1);
+                    }
+
+                    &:first-child a {
+                        padding-left: 0;
+                    }
+                }
+            }
+        }
+
+        &.sticky {
+            box-shadow: 0px 3px 16px 0px rgba(0, 0, 0, 0.1);
+            position: fixed;
+            width: 100%;
+            top: -70px;
+            left: 0;
+            right: 0;
+            z-index: 99;
+            transform: translateY(70px);
+            transition: transform 500ms ease, background 500ms ease;
+            -webkit-transition: transform 500ms ease, background 500ms ease;
+            box-shadow: 0px 3px 16px 0px rgba(0, 0, 0, 0.1);
+            padding: 0px 150px;
+            background: #000;
+
+            @media #{$mobile_device} {
+                padding: 10px 10px;
+            }
+
+            @media #{$tablet_device} {
+                padding: 10px 10px;
+            }
+
+            @media #{$mid_device} {
+                padding: 0px 20px;
+            }
+
+            @media #{$large_device} {
+                padding: 0px 20px
+            }
+
+            .main-menu {
+                padding: 0;
+            }
+        }
+
+    }
+
+}

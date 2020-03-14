@@ -19,7 +19,7 @@
     </head>
     <body>
         <section class="app-layout">
-            @include('includes.side-menu')
+            @include('includes.header')
 
             <section class="app-layout__content-section">
                 @if (session('status'))

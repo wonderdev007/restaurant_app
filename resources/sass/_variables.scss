@@ -1,8 +1,15 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,200i,300,300i,400,400i,500,500i,600,600i,700&display=swap');
+
 // Body
 $body-bg: #f8fafc;
 
+// fonts
+$font1: 'Poppins',
+sans-serif;
+
 // Typography
-$font-family-sans-serif: 'Nunito', sans-serif;
+$font-family-sans-serif: 'Nunito',
+sans-serif;
 $font-size-base: 0.9rem;
 $line-height-base: 1.6;
 
@@ -27,3 +34,5 @@ $darker-green-2: #03ca0d;
 $dark-color: #2e2d2d;
 $light-grey: #a7a7a7;
 $dark-grey: #7c7c7c;
+
+$modal-bg-color: rgb(195, 157, 4);
