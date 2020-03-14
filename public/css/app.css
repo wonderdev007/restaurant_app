@@ -404,6 +404,37 @@ h3 {
   position: relative;
 }
 
+.about-home {
+  height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (max-width: 767px) {
+  .about-home__title {
+    font-size: 2.2rem;
+  }
+}
+
+.about-home__btn {
+  color: #131230;
+  background: #f7c53d;
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: 500;
+  border: 1px solid transparent;
+  display: inline-block;
+  padding: 12px 30px !important;
+  transition: 0.4s;
+}
+
+.about-home__btn:hover {
+  background: #fff;
+  border: 1px solid #f7c53d;
+}
+
 .header-area {
   position: absolute;
   left: 0;
@@ -743,19 +774,9 @@ h3 {
   background-position: center center;
 }
 
-.slider_area .single_slider.single_slider2 {
-  height: 450px;
-}
-
-@media (max-width: 767px) {
-  .slider_area .single_slider.single_slider2 {
-    height: auto;
-  }
-}
-
 @media (max-width: 767px) {
   .slider_area .single_slider {
-    height: auto;
+    height: 50vh;
   }
 }
 

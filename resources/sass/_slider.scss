@@ -16,17 +16,8 @@
         background-repeat: no-repeat;
         background-position: center center;
 
-        &.single_slider2 {
-            height: 450px;
-
-            @media #{$mobile_device} {
-                height: auto;
-            }
-
-        }
-
         @media #{$mobile_device} {
-            height: auto;
+            height: 50vh;
         }
 
         @media #{$tablet_device} {

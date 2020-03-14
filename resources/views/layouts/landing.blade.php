@@ -68,8 +68,8 @@
                         </div>
                     </div>
                 </div>
+            </div>
         </div>
-    </div>
         <!-- slider_area_end -->
 
         @yield('content')

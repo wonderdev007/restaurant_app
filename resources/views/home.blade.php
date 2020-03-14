@@ -3,7 +3,22 @@
 @section('title', 'Page Title')
 
 @section('content')
-    <section class="information">
+    <section class="about-home">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-12 text-center">
+                    <h2 class="about-home__title">Who We Are</h2>
+
+                    <p>Grassfed Grill is an all-day dining space and bar in London with a strong ‘natural’ wine focus, serving contemporary European dishes, inspired by the ‘bistronomy’ movement and our favourite eateries in Paris, Copenhagen, Barcelona, Stockholm & Berlin.</p>
+
+                    <button class="btn about-home__btn mt-5">Discover our Story</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    {{-- <section class="information">
         <div class="information__restaurant-image">
             <img class="information__img-left" src="img/top-down2.jpg">
         </div>
@@ -19,7 +34,7 @@
                 <span>Learn more</span><i class="fa fa-chevron-right information__fa-chevron-right" aria-hidden="true"></i>
             </a>
         </div>
-    </section>
+    </section> --}}
     <section class="food-preview">
         <h2 class="food-preview__title">All our creations come with unlimited filter coffee!</h2>
         <div class="food-preview__button-rounded">View Our Menu</div>
