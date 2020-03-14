@@ -12,6 +12,7 @@
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
 
         <!-- Styles -->
         <link rel="stylesheet" href="css/bootstrap.min.css">
@@ -76,8 +77,10 @@
 
     </body>
 
-  <script src="js/jquery.min.js"></script>
-  <script src="js/owl.carousel.min.js"></script>
-  <script src="js/main.js"></script>
+
+    <script src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/main.js"></script>
 
 </html>

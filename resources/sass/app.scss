@@ -8,6 +8,7 @@
 @import "home";
 @import "header";
 @import "slider";
+@import "slick-slider";
 @import "pages/about";
 @import "menu/index";
 @import "menu/single-menu";
@@ -144,70 +145,9 @@
     }
 }
 
-.information {
-    display: grid;
-    grid-template-columns: 50% 50%;
-    grid-template-rows: 100vh;
-
-    &__restaurant-image {
-        overflow: hidden;
-        height: 100%;
-    }
-
-    &__img-left {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-    }
-
-    &__title {
-        font-size: 2.5rem;
-    }
-
-    &__info {
-        padding: 100px 50px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-    }
-
-    &__paragraphs {
-        display: grid;
-        grid-gap: 2rem;
-        line-height: 1.7;
-        color: #525e66;
-        font-size: 1.1rem;
-        margin-bottom: 3rem;
-    }
-
-    &__about-link {
-        font-size: 1.6rem;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        text-decoration: none !important;
-        color: #fff;
-        background: #0bcc14;
-        padding: 1rem 2rem;
-        border-radius: 2.3rem;
-        font-weight: 700;
-        transition: .4s ease-in-out;
-
-        &:hover {
-            background: #12b11a;
-            color: #fff;
-        }
-
-        span {
-            margin-right: 20px;
-        }
-    }
-
-    &__fa-chevron-right {
-        color: white;
-        font-size: 1.4rem !important;
-    }
+.menu-slider {
+    height: auto;
+    padding-bottom: 6rem;
 }
 
 .food-preview {
@@ -222,45 +162,7 @@
     &__title {
         text-align: center;
         margin-bottom: 3rem;
-    }
 
-    &__button-rounded {
-        background: #0bcc14;
-        color: white;
-        display: inline-block;
-        padding: 15px;
-        border-radius: 30px;
-        margin-bottom: 130px;
-    }
-
-    .container {
-        width: 100%;
-        max-width: 1400px;
-        position: relative;
-    }
-
-    &__left-btn,
-    &__right-btn {
-        background: #0bcc14;
-        color: white;
-        height: 50px;
-        width: 50px;
-        position: absolute;
-        top: calc(50% - 25px);
-        display: inline-block;
-        z-index: 5;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        cursor: pointer;
-    }
-
-    &__left-btn {
-        left: -35px;
-    }
-
-    &__right-btn {
-        right: -35px;
     }
 
     &__food-slider {
@@ -271,42 +173,23 @@
         font-size: 0;
     }
 
-    &__sliding-system {
-        white-space: nowrap;
-        transform: translate3d(-0%, 0, 0);
-    }
-
     &__slide {
-        width: 20%;
         position: relative;
-        height: 500px;
+        height: 700px;
         cursor: pointer;
         display: inline-block;
         white-space: normal;
 
-        // border-right: 1px solid #e9f0f4;
-        &:hover {
-            .food-preview__background {
-                background: rgb(245, 185, 46);
-                transform: translate3d(0, -200px, 0);
-            }
-
-            .food-preview__content {
-                .food-preview__food-title {
-                    color: white;
-                }
-
-                .food-preview__food-description {
-                    color: white;
-                }
-            }
-        }
-
-        img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            max-width: 250px;
+        &:before {
+            position: absolute;
+            content: "";
+            left: 0;
+            right: 0;
+            bottom: 0;
+            top: 0;
+            z-index: 2;
+            background: #000;
+            opacity: .3;
         }
     }
 
@@ -327,20 +210,24 @@
         padding: 20px;
         width: 100%;
         height: 100%;
-        // display: flex;
-        // flex-direction: column;
-        // align-items: center;
         display: grid;
         grid-template-rows: 5rem 1fr 1fr;
         justify-items: center;
     }
 
+    &__text {
+        position: absolute;
+        z-index: 3;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
     &__food-title {
-        color: #0bcc14;
-        font-size: 2rem;
+        color: $primary-color;
+        color: #fff;
+        font-size: 3rem;
         font-weight: 900;
-        align-self: center;
-        // transition: all .3s ease-in-out;
     }
 
     &__food-description {
@@ -353,7 +240,14 @@
     }
 
     &__food-image {
-        align-self: center;
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        transition: transform 0.3s ease-in-out;
+
+        &:hover {
+            transform: scale(1.1);
+        }
     }
 }
 

@@ -48,4 +48,38 @@
             }
         }
     });
+
+    // $(".carousel").slick({
+    //     slidesToShow: 3,
+    //     slidesToScroll: 1,
+    //     asNavFor: ".slider-for",
+    //     dots: true,
+    //     centerMode: true,
+    //     focusOnSelect: true
+    // });
+
+    $(".slider").slick({
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        // autoplay: true,
+        autoplaySpeed: 3500,
+        fadeSpeed: 1000,
+        arrows: false,
+        dots: true,
+        pauseOnHover: false,
+        responsive: [
+            {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 1
+                }
+            },
+            {
+                breakpoint: 520,
+                settings: {
+                    slidesToShow: 1
+                }
+            }
+        ]
+    });
 })(jQuery);
