@@ -68,7 +68,7 @@
             }
         }
 
-        .book_room {
+        .call {
             @include flexbox();
             @include align-items(center);
             @include justify-content(flex-end);
@@ -91,7 +91,7 @@
                 }
             }
 
-            .book_btn {
+            .call_btn {
                 margin-left: 15px;
 
                 a {
@@ -195,54 +195,6 @@
                         }
                     }
 
-                    .submenu {
-                        position: absolute;
-                        left: 0;
-                        top: 140%;
-                        background: #fff;
-                        width: 200px;
-                        z-index: 2;
-                        box-shadow: 0 0 10px rgba(0, 0, 0, .02);
-                        opacity: 0;
-                        visibility: hidden;
-                        text-align: left;
-                        @include transition(.6s);
-
-                        li {
-                            display: block;
-
-                            a {
-                                padding: 10px 15px;
-                                position: inherit;
-                                @include transition(.3s);
-                                display: block;
-                                color: #000;
-
-                                &::before {
-                                    display: none;
-                                }
-                            }
-
-                            &:hover a {
-                                color: #000;
-                            }
-                        }
-                    }
-
-                    &:hover>.submenu {
-                        opacity: 1;
-                        visibility: visible;
-                        top: 100%;
-                    }
-
-                    &:hover>a::before {
-                        opacity: 1;
-                        transform: scaleX(1);
-                    }
-
-                    &:first-child a {
-                        padding-left: 0;
-                    }
                 }
             }
         }

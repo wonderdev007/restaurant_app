@@ -34,7 +34,7 @@
                                 </div>
                             </div>
                             <div class="col-xl-5 col-lg-5 d-none d-lg-block">
-                                <div class="book_room">
+                                <div class="call">
                                     <div class="social_links">
                                         <ul>
                                             <li>
@@ -54,7 +54,7 @@
                                             </li>
                                         </ul>
                                     </div>
-                                    <div class="book_btn d-none d-xl-block">
+                                    <div class="call_btn d-none d-xl-block">
                                         <a href="tel:020 7946 08002">020 7946 0800</a>
                                     </div>
                                 </div>

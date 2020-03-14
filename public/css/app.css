@@ -528,7 +528,7 @@ h3 {
   }
 }
 
-.header-area .main-header-area .book_room {
+.header-area .main-header-area .call {
   display: flex;
   -moz-align-items: center;
   -ms-align-items: center;
@@ -539,25 +539,25 @@ h3 {
   -ms-flex-pack: flex-end;
 }
 
-.header-area .main-header-area .book_room .social_links ul li {
+.header-area .main-header-area .call .social_links ul li {
   display: inline-block;
 }
 
-.header-area .main-header-area .book_room .social_links ul li a {
+.header-area .main-header-area .call .social_links ul li a {
   color: #fff;
   margin: 0 10px;
   font-size: 20px;
 }
 
-.header-area .main-header-area .book_room .social_links ul li a:hover {
+.header-area .main-header-area .call .social_links ul li a:hover {
   color: #f7c53d;
 }
 
-.header-area .main-header-area .book_room .book_btn {
+.header-area .main-header-area .call .call_btn {
   margin-left: 15px;
 }
 
-.header-area .main-header-area .book_room .book_btn a {
+.header-area .main-header-area .call .call_btn a {
   background: transparent;
   padding: 12px 26px;
   font-size: 18px;
@@ -568,7 +568,7 @@ h3 {
   font-family: "Montserrat", sans-serif;
 }
 
-.header-area .main-header-area .book_room .book_btn a:hover {
+.header-area .main-header-area .call .call_btn a:hover {
   color: #fff;
   border: 1px solid #f7c53d;
 }
@@ -659,55 +659,6 @@ h3 {
 
 .header-area .main-header-area .main-menu ul li a:hover {
   color: #f7c53d;
-}
-
-.header-area .main-header-area .main-menu ul li .submenu {
-  position: absolute;
-  left: 0;
-  top: 140%;
-  background: #fff;
-  width: 200px;
-  z-index: 2;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.02);
-  opacity: 0;
-  visibility: hidden;
-  text-align: left;
-  transition: 0.6s;
-}
-
-.header-area .main-header-area .main-menu ul li .submenu li {
-  display: block;
-}
-
-.header-area .main-header-area .main-menu ul li .submenu li a {
-  padding: 10px 15px;
-  position: inherit;
-  transition: 0.3s;
-  display: block;
-  color: #000;
-}
-
-.header-area .main-header-area .main-menu ul li .submenu li a::before {
-  display: none;
-}
-
-.header-area .main-header-area .main-menu ul li .submenu li:hover a {
-  color: #000;
-}
-
-.header-area .main-header-area .main-menu ul li:hover > .submenu {
-  opacity: 1;
-  visibility: visible;
-  top: 100%;
-}
-
-.header-area .main-header-area .main-menu ul li:hover > a::before {
-  opacity: 1;
-  transform: scaleX(1);
-}
-
-.header-area .main-header-area .main-menu ul li:first-child a {
-  padding-left: 0;
 }
 
 .header-area .main-header-area.sticky {
