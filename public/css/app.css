@@ -671,7 +671,7 @@ h3 {
 }
 
 .banner-area2 {
-  padding: 210px 0 160px;
+  padding: 220px 0 210px;
   z-index: 1;
 }
 
@@ -697,24 +697,23 @@ h3 {
 }
 
 .menu-bg {
-  padding: 200px 0 200px;
-  background-image: url(/images/menu-bg.jpg?2c9279d55a664e278e4a6fc579fd5b10);
-  background-position: center;
-  background-size: cover;
+  background-image: url(/images/menu-bg.jpg?b29b3177ce7799c1b450ccbce983075c);
 }
 
 .reservations-bg {
-  padding: 200px 0 200px;
-  background-image: url(/images/reservation-bg.jpg?9ba5607240af4af3d454b5c3553b435e);
-  background-position: center;
-  background-size: cover;
+  background-image: url(/images/reservation-bg.jpg?c762a59150320967f29d29883c72aa24);
 }
 
 .offers-bg {
-  padding: 200px 0 200px;
-  background-image: url(/images/offers-bg.jpg?d2fe0ec8f1a98fba017d386fc95ceda4);
-  background-position: center;
-  background-size: cover;
+  background-image: url(/images/offers-bg.jpg?ceedb742ac0094dcae314e5700671623);
+}
+
+.about-bg {
+  background-image: url(/images/about-bg.jpg?ba89cdcad591184d4cb3db156a724eb5);
+}
+
+.contact-bg {
+  background-image: url(/images/contact-bg.jpg?0b20f1640cd2079d2572db347403de39);
 }
 
 @media (max-width: 767px) {
@@ -730,11 +729,11 @@ h3 {
 }
 
 .slider_bg_1 {
-  background-image: url(/images/slide1.jpg?9edf3ad720cac0424fab48ddc284614e);
+  background-image: url(/images/slide1.jpg?e9c53c810955e61c8e8ec882f3b75deb);
 }
 
 .slider_bg_2 {
-  background-image: url(/images/slide2.jpg?1a7ca4cc6c5b2dab85e8893748b2f2c0);
+  background-image: url(/images/slide2.jpg?630204750bc8f109272bef0cc2317876);
 }
 
 .slider_area {
@@ -1200,6 +1199,34 @@ h3 {
 @media (min-width: 768px) and (max-width: 991px) {
   .offers-page__title {
     font-size: 2rem;
+  }
+}
+
+.contact-page {
+  padding: 10rem;
+}
+
+.contact-page__title {
+  margin-bottom: 2rem;
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.contact-page__text {
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+@media (max-width: 767px) {
+  .contact-page {
+    padding: 50px 20px;
+    overflow: visible;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .contact-page {
+    padding: 50px 20px;
   }
 }
 

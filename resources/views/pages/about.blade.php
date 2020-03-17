@@ -3,8 +3,19 @@
 @section('title', 'Page Title')
 
 @section('content')
+    <!-- Banner -->
+    <section class="banner-area banner-area2 about-bg text-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h3>About</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Banner End -->
     <div class="about-page">
-        <div class="content-box">
+        <div class="container">
             <div class="row">
                 <div class="col-md-6">
                     <h1 class="about-page__title">About Us</h1>

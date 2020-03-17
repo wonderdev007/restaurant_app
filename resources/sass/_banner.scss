@@ -6,8 +6,7 @@
 }
 
 .banner-area2 {
-    padding: 210px 0 160px;
-    // position: relative;
+    padding: 220px 0 210px;
     z-index: 1;
 
     &:after {
@@ -33,25 +32,24 @@
 }
 
 .menu-bg {
-    padding: 200px 0 200px;
     background-image: url('../img/menu-bg.jpg');
-    background-position: center;
-    background-size: cover;
 }
 
 
 .reservations-bg {
-    padding: 200px 0 200px;
     background-image: url('../img/reservation-bg.jpg');
-    background-position: center;
-    background-size: cover;
 }
 
 .offers-bg {
-    padding: 200px 0 200px;
     background-image: url('../img/offers-bg.jpg');
-    background-position: center;
-    background-size: cover;
+}
+
+.about-bg {
+    background-image: url('../img/about-bg.jpg');
+}
+
+.contact-bg {
+    background-image: url('../img/contact-bg.jpg');
 }
 
 // Small devices (landscape phones, 576px and up)

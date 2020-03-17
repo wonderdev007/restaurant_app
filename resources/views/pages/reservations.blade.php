@@ -15,9 +15,9 @@
     </section>
     <!-- Banner End -->
     <div class="reservations-page">
-        <div class="content-box">
+        <div class="container">
             <div class="row">
-                <div class="col-md-6 mx-auto">
+                <div class="col-lg-8 mx-auto">
                     <h1 class="reservations-page__title text-center">Reserve a Table</h1>
 
                     <form method="POST" action="/reservations">

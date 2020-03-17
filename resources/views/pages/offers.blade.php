@@ -15,9 +15,9 @@
     </section>
     <!-- Banner End -->
     <div class="offers-page">
-        <div class="content-box">
+        <div class="container">
             <div class="row">
-                <div class="col-xs-12 col-sm-12 col-md-8 col-lg-6 mx-auto">
+                <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8 mx-auto">
                     <h1 class="offers-page__title text-center">Sign Up To Receive Offers</h1>
 
                     <form method="POST" action="/offers">
