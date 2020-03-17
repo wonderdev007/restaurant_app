@@ -3,6 +3,17 @@
 @section('title', 'Page Title')
 
 @section('content')
+    <!-- Banner -->
+    <section class="banner-area banner-area2 offers-bg text-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h3>Offers</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Banner End -->
     <div class="offers-page">
         <div class="content-box">
             <div class="row">
@@ -49,7 +60,7 @@
                         </div>
 
                         <div class="form-group">
-                            <button type="submit" class="btn button btn-block">Signup</button>
+                            <button type="submit" class="btn offers-page__btn btn-block">Signup</button>
                         </div>
                     </form>
                     <div class="mt-5">

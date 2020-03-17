@@ -47,6 +47,13 @@
     background-size: cover;
 }
 
+.offers-bg {
+    padding: 200px 0 200px;
+    background-image: url('../img/offers-bg.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
 // Small devices (landscape phones, 576px and up)
 @media (max-width: 767px) {
     .banner-area2 {
