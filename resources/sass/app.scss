@@ -7,6 +7,7 @@
 @import 'theme-default';
 @import "home";
 @import "header";
+@import "banner";
 @import "slider";
 @import "slick-slider";
 @import "pages/about";
@@ -14,136 +15,6 @@
 @import "menu/single-menu";
 @import "pages/reservations";
 @import "pages/offers";
-
-
-.app-layout {
-    display: grid;
-    // grid-template-columns: 350px 1fr;
-    width: 100%;
-    height: 100vh;
-    overflow: hidden;
-
-    &__side-menu {
-        background: white;
-        padding: 50px;
-        position: absolute;
-        width: 20rem;
-        height: 100vh;
-    }
-
-    &__logo {
-        display: flex;
-        justify-content: center;
-        margin-bottom: 50px;
-    }
-
-    &__img {
-        max-width: 100px;
-    }
-
-    &__menu {
-        margin-top: 50px;
-        margin-bottom: 80px;
-        text-align: center;
-    }
-
-    &__menu-title {
-        text-transform: uppercase;
-        font-weight: bold;
-        font-size: 1.2rem;
-        border-bottom: 1px solid #e2eaef;
-        padding-bottom: 20px;
-        margin-bottom: 20px;
-    }
-
-    &__links {
-        li {
-            a {
-                font-size: 1.1rem;
-                color: $dark-color;
-                font-weight: 700;
-                text-decoration: none;
-                margin-bottom: 2rem;
-                display: block;
-                transition: color 0.3s ease-in-out;
-
-                &:hover {
-                    color: $primary-color;
-                }
-            }
-        }
-    }
-
-
-    &__social-icons {
-        display: flex;
-        justify-content: center;
-
-        a {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            background: #000;
-            font-size: 0.9rem;
-            text-decoration: none;
-            color: white;
-            height: 30px;
-            width: 30px;
-            border-radius: 50%;
-            margin-right: 10px;
-            transition: 0.4s;
-
-            &:hover {
-                background-color: $primary-color-light;
-            }
-        }
-    }
-
-    &__location {
-        align-self: center;
-        position: absolute;
-        bottom: 100px;
-    }
-
-    &__address {
-        color: #697177;
-        margin-bottom: 20px;
-        line-height: 1.7;
-    }
-
-    &__phone-number {
-        a {
-            color: #15cf1e;
-            font-size: 2rem;
-            font-weight: 700;
-            text-decoration: none;
-        }
-    }
-
-    &__content-section {
-        transform: translate3d(20rem, 0, 0);
-        max-width: calc(100vw - 20rem);
-        height: 100%;
-        background: $primary-color-light;
-
-        /* Old browsers */
-        background: -moz-radial-gradient(center,
-                ellipse cover,
-                $primary-color-light 0%,
-                $primary-color 100%);
-        /* FF3.6-15 */
-        background: -webkit-radial-gradient(center,
-                ellipse cover,
-                $primary-color-light 0%,
-                $primary-color 100%);
-        /* Chrome10-25,Safari5.1-6 */
-        background: radial-gradient(ellipse at center,
-                $primary-color-light 0%,
-                $primary-color 100%);
-        /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-        overflow: hidden;
-    }
-}
 
 .menu-slider {
     height: auto;
@@ -260,80 +131,7 @@ h2 {
 // Small devices (landscape phones, 576px and up)
 @media (max-width: 767px) {
     .app-layout {
-        &__side-menu {
-            display: none;
-        }
-
-        .welcome-jumbo {
-            width: 100%;
-            max-width: 100vw;
-            padding: 20px;
-            transform: translate3d(0, 0, 0);
-
-            &__title {
-                font-size: 3rem;
-            }
-        }
-
-        &__content-section {
-            width: 100%;
-            max-width: 100vw;
-            padding: 20px;
-            transform: translate3d(0, 0, 0);
-            overflow-y: scroll;
-        }
-    }
-
-    .information {
-        grid-template-columns: 1fr;
-        grid-template-rows: min-content;
-
-        &__restaurant-image {
-            height: 30vh;
-        }
-
-        &__img-left {
-            height: 100%;
-        }
-
-        &__title {
-            font-size: 1.8rem;
-        }
-
-        &__info {
-            padding: 50px 30px;
-        }
-
-        &__paragraphs {
-            font-size: 1rem;
-        }
-    }
-
-    .food-preview {
-        padding: 50px 20px;
-        width: 100%;
-        overflow: hidden;
-
-        &__left-btn {
-            left: -20px;
-        }
-
-        &__right-btn {
-            right: -20px;
-        }
-
-        &__title {
-            font-size: 2rem;
-            line-height: 1.1;
-        }
-
-        &__button-rounded {
-            margin-bottom: 40px;
-        }
-
-        &__slide {
-            width: 100%;
-        }
+        &__content-section {}
     }
 }
 
@@ -355,65 +153,7 @@ h2 {
             }
         }
 
-        &__content-section {
-            width: 100%;
-            max-width: 100vw;
-            padding: 20px;
-            transform: translate3d(0, 0, 0);
-            // overflow-y: scroll;
-        }
-    }
-
-    .information {
-        grid-template-columns: 1fr;
-        grid-template-rows: min-content;
-
-        &__restaurant-image {
-            height: 30vh;
-        }
-
-        &__img-left {
-            height: 100%;
-        }
-
-        &__title {
-            font-size: 1.8rem;
-        }
-
-        &__info {
-            padding: 50px 30px;
-        }
-
-        &__paragraphs {
-            font-size: 1rem;
-        }
-    }
-
-    .food-preview {
-        padding: 50px 20px;
-        width: 100%;
-        overflow: hidden;
-
-        &__left-btn {
-            left: -20px;
-        }
-
-        &__right-btn {
-            right: -20px;
-        }
-
-        &__title {
-            font-size: 2rem;
-            line-height: 1.1;
-        }
-
-        &__button-rounded {
-            margin-bottom: 40px;
-        }
-
-        &__slide {
-            width: 50%;
-        }
+        &__content-section {}
     }
 }
 
@@ -423,10 +163,9 @@ h2 {
 // Extra large devices (large desktops, 1200px and up)
 @media (min-width: 1200px) {}
 
-
 .content-box {
     background-color: #fff;
-    padding: 8% 4rem;
+    // padding: 8% 4rem;
 
     // Small devices
     @media (max-width: 767px) {

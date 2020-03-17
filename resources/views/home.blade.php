@@ -17,12 +17,12 @@
         </div>
     </section>
 
-    <section class="menu-slider">
+    <div class="menu-slider">
         <div class="container-fluid">
             <div class="row">
                 <div class="col-xl-12">
                     <h2 class="text-center">OUR MENU</h2>
-                    <section class="slider">
+                    <div class="slider">
                         <div class="food-preview__slide">
                             <div class="food-preview__text">
                                 <h3 class="food-preview__food-title">Starters</h3>
@@ -65,7 +65,7 @@
                             <img class="food-preview__food-image" src="img/menu/drinks.jpg">
                         </div>
 
-                    </section>
+                    </div>
                 </div>
             </div>
         </div>

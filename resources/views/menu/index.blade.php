@@ -3,131 +3,107 @@
 @section('title', 'Page Title')
 
 @section('content')
-    <div class="menu-page">
-        <section class="food-preview">
-            <h2 class="food-preview__title">All our creations come with unlimited filter coffee!</h2>
-            <div class="food-preview__button-rounded">View Our Menu</div>
-            <div class="container">
-                <div class="food-preview__left-btn">
-                    <i class="fa fa-chevron-left" aria-hidden="true"></i>
+    <!-- Banner -->
+    <section class="banner-area banner-area2 menu-bg text-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h3>Our Menu</h3>
                 </div>
-                <div class="food-preview__right-btn">
-                    <i class="fa fa-chevron-right" aria-hidden="true"></i>
+            </div>
+        </div>
+    </section>
+    <!-- Banner End -->
+
+    <!-- Food Area starts -->
+    <section class="menu">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h3 class="menu__title mb-5">We serve delicious food</h3>
                 </div>
-                <div class="food-preview__food-slider">
-                    <div class="food-preview__sliding-system">
-                        <div class="food-preview__slide">
-                            <div class="food-preview__background"></div>
-                            <div class="food-preview__content">
-                                <div class="food-preview__food-title">
-                                    Starters
-                                </div>
-                                <p class="food-preview__food-description">
-                                    A well-chosen dinner starter can set the tone for an entire meal.
-                                    Kick off your meal in style with our chic selection of starters. From soups and salads to scallops and smoked salmon, these elegant dishes are sure to impress.
-                                </p>
-                                <div class="food-preview__food-image">
-                                    <img src="img/menu/starter.png">
-                                </div>
-                            </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 col-sm-12">
+                    <div class="menu__single-food">
+                        <div class="menu__img-wrapper">
+                            <img src="img/menu/starter.jpg" class="img-fluid menu__img" alt="">
                         </div>
-                        <div class="food-preview__slide">
-                            <div class="food-preview__background"></div>
-                            <div class="food-preview__content">
-                                <div class="food-preview__food-title">
-                                    Burgers
-                                </div>
-                                <p class="food-preview__food-description">
-                                    At FoodCircle, we believe in ingredient excellence. From our smashed-to-order burgers and artisan buns, to our tender chicken sandwiches, you can count on fresh and high-quality food.
-                                </p>
-                                <div class="food-preview__food-image">
-                                    <img src="img/menu/burger.png">
-                                </div>
+                        <div class="menu__food-content">
+                            <div class="d-flex justify-content-between">
+                                <h5 class="menu__category-title">Starters</h5>
                             </div>
+                            <p class="menu__text pt-3">A well-chosen dinner starter can set the tone for an entire meal. Kick off your meal in style with our chic selection of starters. From soups and salads to scallops and smoked salmon, these elegant dishes are sure to impress.</p>
                         </div>
-                        <div class="food-preview__slide">
-                            <div class="food-preview__background"></div>
-                            <div class="food-preview__content">
-                                <div class="food-preview__food-title">
-                                    Entrees
-                                </div>
-                                <p class="food-preview__food-description">
-                                    Getting dinner on the table is easy with these main dishes and entrées. Recipes from our kitchens professionals are designed to inspire – whether you are eating at us or cooking at home.
-                                </p>
-                                <div class="food-preview__food-image">
-                                    <img src="img/menu/entree.png">
-                                </div>
-                            </div>
-
+                    </div>
+                </div>
+                <div class="col-md-6 col-sm-12">
+                    <div class="menu__single-food mt-5 mt-md-0">
+                        <div class="menu__img-wrapper">
+                            <img src="img/menu/hamburger.jpg" class="img-fluid menu__img" alt="">
                         </div>
-                        <div class="food-preview__slide">
-                            <div class="food-preview__background"></div>
-                            <div class="food-preview__content">
-                                <div class="food-preview__food-title">
-                                    Sides
-                                </div>
-                                <p class="food-preview__food-description">
-                                    Choose from: tossed garden salad, grilled veggies, cole slaw, sweet potato fries, baked potato, mashed potatoes, onion rings, french fries and even our own house-made mac and cheese.
-                                </p>
-                                <div class="food-preview__food-image">
-                                    <img src="img/menu/salad.png">
-                                </div>
+                        <div class="menu__food-content">
+                            <div class="d-flex justify-content-between">
+                                <h5 class="menu__category-title">Burgers</h5>
                             </div>
-
+                            <p class="menu__text pt-3">At FoodCircle, we believe in ingredient excellence. From our smashed-to-order burgers and artisan buns, to our tender chicken sandwiches, you can count on fresh and high-quality food.</p>
                         </div>
-                        <div class="food-preview__slide">
-                            <div class="food-preview__background"></div>
-                            <div class="food-preview__content">
-                                <div class="food-preview__food-title">
-                                    Deserts
-                                </div>
-                                <p class="food-preview__food-description">
-                                    Finish your meal in style with something from the FoodCircle desserts menu; try the new salted caramel arctic slice or the chocolate hazelnut cheesecake, or try an oreo topping, currently very on-trend in desserts
-                                </p>
-                                <div class="food-preview__food-image">
-                                    <img src="img/menu/desert.png">
-                                </div>
-                            </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-sm-12">
+                    <div class="menu__single-food mt-5">
+                        <div class="menu__img-wrapper">
+                            <img src="img/menu/entree.jpg" class="img-fluid menu__img" alt="">
                         </div>
-                        <div class="food-preview__slide">
-                            <div class="food-preview__background"></div>
-                            <div class="food-preview__content">
-                                <div class="food-preview__food-title">
-                                    Beers
-                                </div>
-                                <p class="food-preview__food-description">
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi omnis iste ab deleniti cupiditate
-                                    architecto
-                                    officia aspernatur nulla iusto delectus doloremque possimus recusandae, reiciendis aliquam vel voluptas
-                                    repellendus natus nihil?
-                                </p>
-                                <div class="food-preview__food-image">
-                                    <img
-                                    src="https://pngriver.com/wp-content/uploads/2018/04/Download-Cupcake-PNG-Transparent-Image-420x190.png">
-                                </div>
+                        <div class="menu__food-content">
+                            <div class="d-flex justify-content-between">
+                                <h5 class="menu__category-title">Entrees</h5>
                             </div>
+                            <p class="menu__text pt-3">Getting dinner on the table is easy with these main dishes and entrées. Recipes from our kitchens professionals are designed to inspire – whether you are eating at us or cooking at home.</p>
                         </div>
-                        <div class="food-preview__slide">
-                            <div class="food-preview__background"></div>
-                            <div class="food-preview__content">
-                                <div class="food-preview__food-title">
-                                    Drinks
-                                </div>
-                                <p class="food-preview__food-description">
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi omnis iste ab deleniti cupiditate
-                                    architecto
-                                    officia aspernatur nulla iusto delectus doloremque possimus recusandae, reiciendis aliquam vel voluptas
-                                    repellendus natus nihil?
-                                </p>
-                                <div class="food-preview__food-image">
-                                    <img
-                                    src="https://pngriver.com/wp-content/uploads/2018/04/Download-Cupcake-PNG-Transparent-Image-420x190.png">
-                                </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-sm-12">
+                    <div class="menu__single-food mt-5">
+                        <div class="menu__img-wrapper">
+                            <img src="img/menu/sides.jpg" class="img-fluid menu__img" alt="">
+                        </div>
+                        <div class="menu__food-content">
+                            <div class="d-flex justify-content-between">
+                                <h5 class="menu__category-title">Sides</h5>
                             </div>
+                            <p class="menu__text pt-3">Choose from: tossed garden salad, grilled veggies, cole slaw, sweet potato fries, baked potato, mashed potatoes, onion rings, french fries and even our own house-made mac and cheese.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-sm-12">
+                    <div class="menu__single-food mt-5">
+                        <div class="menu__img-wrapper">
+                            <img src="img/menu/deserts.jpg" class="img-fluid menu__img" alt="">
+                        </div>
+                        <div class="menu__food-content">
+                            <div class="d-flex justify-content-between">
+                                <h5 class="menu__category-title">Deserts</h5>
+                            </div>
+                            <p class="menu__text pt-3">Finish your meal in style with something from the FoodCircle desserts menu; try the new salted caramel arctic slice or the chocolate hazelnut cheesecake, or try an oreo topping, currently very on-trend in desserts.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-sm-12">
+                    <div class="menu__single-food mt-5">
+                        <div class="menu__img-wrapper">
+                            <img src="img/menu/drinks.jpg" class="img-fluid menu__img" alt="">
+                        </div>
+                        <div class="menu__food-content">
+                            <div class="d-flex justify-content-between">
+                                <h5 class="menu__category-title">Drinks</h5>
+                            </div>
+                            <p class="menu__text pt-3">Explore our drinks menu of handpicked wines, Rosé, Cocktails, Fizz, soft drinks and more. See the full drinks menu available.</p>
                         </div>
                     </div>
                 </div>
             </div>
-        </section>
-    </div>
+        </div>
+    </section>
+    <!-- Food Area End -->
 @endsection

@@ -705,6 +705,46 @@ h3 {
   padding: 0;
 }
 
+.banner-area {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+
+.banner-area2 {
+  padding: 210px 0 160px;
+  z-index: 1;
+}
+
+.banner-area2:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(1, 7, 16, 0.7);
+  z-index: -1;
+}
+
+.banner-area2 h3 {
+  font-size: 4rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 400;
+  line-height: 100px;
+  margin-bottom: 27px;
+  color: #fff;
+}
+
+.menu-bg {
+  padding: 200px 0 200px;
+  background-image: url(/images/menu-bg.jpg?2c9279d55a664e278e4a6fc579fd5b10);
+  background-position: center;
+  background-size: cover;
+}
+
 .slider_bg_1 {
   background-image: url(/images/slide1.jpg?9edf3ad720cac0424fab48ddc284614e);
 }
@@ -985,35 +1025,54 @@ h3 {
   }
 }
 
-.menu-page {
-  padding: 4rem 5rem;
+.menu {
+  padding: 5rem 0;
 }
 
-.menu-page .food-preview__title {
-  margin-bottom: 2rem;
-  font-size: 2.8rem;
-  font-weight: 700;
+.menu__title {
+  font-size: 3rem;
+  text-align: center;
 }
 
-.menu-page .food-preview__button-rounded {
-  margin-bottom: 2rem;
+.menu__img-wrapper {
+  overflow: hidden;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -o-transition: 0.5s;
 }
 
-.menu-page .food-preview__text {
-  font-size: 1.1rem;
-  line-height: 1.6;
+.menu__img {
+  display: block;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center center;
+     object-position: center center;
+  height: 350px;
+  width: 100%;
+  transition: 0.5s;
 }
 
-@media (max-width: 767px) {
-  .menu-page {
-    padding: 50px 20px;
-  }
+.menu__category-title {
+  font-size: 1.7rem;
+  font-weight: 500;
 }
 
-@media (min-width: 768px) and (max-width: 991px) {
-  .menu-page {
-    padding: 50px 20px;
-  }
+.menu__food-content {
+  padding: 30px;
+  background: #f9f9ff;
+  transition: 0.5s;
+}
+
+.menu__single-food:hover .menu__food-content {
+  background-color: #f5b92e;
+}
+
+.menu__single-food:hover .menu__text {
+  color: #000;
+}
+
+.menu__single-food:hover img {
+  transform: scale(1.1, 1.1);
 }
 
 .single-menu-page {
@@ -1135,116 +1194,6 @@ h3 {
   }
 }
 
-.app-layout {
-  display: grid;
-  width: 100%;
-  height: 100vh;
-  overflow: hidden;
-}
-
-.app-layout__side-menu {
-  background: white;
-  padding: 50px;
-  position: absolute;
-  width: 20rem;
-  height: 100vh;
-}
-
-.app-layout__logo {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 50px;
-}
-
-.app-layout__img {
-  max-width: 100px;
-}
-
-.app-layout__menu {
-  margin-top: 50px;
-  margin-bottom: 80px;
-  text-align: center;
-}
-
-.app-layout__menu-title {
-  text-transform: uppercase;
-  font-weight: bold;
-  font-size: 1.2rem;
-  border-bottom: 1px solid #e2eaef;
-  padding-bottom: 20px;
-  margin-bottom: 20px;
-}
-
-.app-layout__links li a {
-  font-size: 1.1rem;
-  color: #2e2d2d;
-  font-weight: 700;
-  text-decoration: none;
-  margin-bottom: 2rem;
-  display: block;
-  transition: color 0.3s ease-in-out;
-}
-
-.app-layout__links li a:hover {
-  color: #f5b92e;
-}
-
-.app-layout__social-icons {
-  display: flex;
-  justify-content: center;
-}
-
-.app-layout__social-icons a {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: #000;
-  font-size: 0.9rem;
-  text-decoration: none;
-  color: white;
-  height: 30px;
-  width: 30px;
-  border-radius: 50%;
-  margin-right: 10px;
-  transition: 0.4s;
-}
-
-.app-layout__social-icons a:hover {
-  background-color: #1dfa28;
-}
-
-.app-layout__location {
-  align-self: center;
-  position: absolute;
-  bottom: 100px;
-}
-
-.app-layout__address {
-  color: #697177;
-  margin-bottom: 20px;
-  line-height: 1.7;
-}
-
-.app-layout__phone-number a {
-  color: #15cf1e;
-  font-size: 2rem;
-  font-weight: 700;
-  text-decoration: none;
-}
-
-.app-layout__content-section {
-  transform: translate3d(20rem, 0, 0);
-  max-width: calc(100vw - 20rem);
-  height: 100%;
-  background: #1dfa28;
-  /* Old browsers */
-  /* FF3.6-15 */
-  /* Chrome10-25,Safari5.1-6 */
-  background: radial-gradient(ellipse at center, #1dfa28 0%, #f5b92e 100%);
-  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  overflow: hidden;
-}
-
 .menu-slider {
   height: auto;
   padding-bottom: 6rem;
@@ -1357,84 +1306,6 @@ h2 {
   margin-bottom: 3rem;
 }
 
-@media (max-width: 767px) {
-  .app-layout__side-menu {
-    display: none;
-  }
-
-  .app-layout .welcome-jumbo {
-    width: 100%;
-    max-width: 100vw;
-    padding: 20px;
-    transform: translate3d(0, 0, 0);
-  }
-
-  .app-layout .welcome-jumbo__title {
-    font-size: 3rem;
-  }
-
-  .app-layout__content-section {
-    width: 100%;
-    max-width: 100vw;
-    padding: 20px;
-    transform: translate3d(0, 0, 0);
-    overflow-y: scroll;
-  }
-
-  .information {
-    grid-template-columns: 1fr;
-    grid-template-rows: -webkit-min-content;
-    grid-template-rows: min-content;
-  }
-
-  .information__restaurant-image {
-    height: 30vh;
-  }
-
-  .information__img-left {
-    height: 100%;
-  }
-
-  .information__title {
-    font-size: 1.8rem;
-  }
-
-  .information__info {
-    padding: 50px 30px;
-  }
-
-  .information__paragraphs {
-    font-size: 1rem;
-  }
-
-  .food-preview {
-    padding: 50px 20px;
-    width: 100%;
-    overflow: hidden;
-  }
-
-  .food-preview__left-btn {
-    left: -20px;
-  }
-
-  .food-preview__right-btn {
-    right: -20px;
-  }
-
-  .food-preview__title {
-    font-size: 2rem;
-    line-height: 1.1;
-  }
-
-  .food-preview__button-rounded {
-    margin-bottom: 40px;
-  }
-
-  .food-preview__slide {
-    width: 100%;
-  }
-}
-
 @media (min-width: 768px) and (max-width: 991px) {
   .app-layout__side-menu {
     transform: translate3d(-300px, 0, 0);
@@ -1450,71 +1321,10 @@ h2 {
   .app-layout .welcome-jumbo__title {
     font-size: 5.5rem;
   }
-
-  .app-layout__content-section {
-    width: 100%;
-    max-width: 100vw;
-    padding: 20px;
-    transform: translate3d(0, 0, 0);
-  }
-
-  .information {
-    grid-template-columns: 1fr;
-    grid-template-rows: -webkit-min-content;
-    grid-template-rows: min-content;
-  }
-
-  .information__restaurant-image {
-    height: 30vh;
-  }
-
-  .information__img-left {
-    height: 100%;
-  }
-
-  .information__title {
-    font-size: 1.8rem;
-  }
-
-  .information__info {
-    padding: 50px 30px;
-  }
-
-  .information__paragraphs {
-    font-size: 1rem;
-  }
-
-  .food-preview {
-    padding: 50px 20px;
-    width: 100%;
-    overflow: hidden;
-  }
-
-  .food-preview__left-btn {
-    left: -20px;
-  }
-
-  .food-preview__right-btn {
-    right: -20px;
-  }
-
-  .food-preview__title {
-    font-size: 2rem;
-    line-height: 1.1;
-  }
-
-  .food-preview__button-rounded {
-    margin-bottom: 40px;
-  }
-
-  .food-preview__slide {
-    width: 50%;
-  }
 }
 
 .content-box {
   background-color: #fff;
-  padding: 8% 4rem;
 }
 
 @media (max-width: 767px) {
