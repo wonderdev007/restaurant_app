@@ -29,7 +29,7 @@
                             <div class="col-xl-2 col-lg-2">
                                 <div class="logo-img">
                                     <a href="/">
-                                        <img src="img/logo.png" alt="">
+                                        <img src="{{$settings["general"]->logo_image_url}}" alt="">
                                     </a>
                                 </div>
                             </div>
@@ -38,24 +38,24 @@
                                     <div class="social_links">
                                         <ul>
                                             <li>
-                                                <a href="#">
+                                                <a href="{{$settings["social"]->instagram_url}}" target="new">
                                                     <i class="fa fa-instagram"></i>
                                                 </a>
                                             </li>
                                             <li>
-                                                <a href="#">
+                                                <a href="{{$settings["social"]->twitter_url}}" target="new">
                                                     <i class="fa fa-twitter"></i>
                                                 </a>
                                             </li>
                                             <li>
-                                                <a href="#">
+                                                <a href="{{$settings["social"]->facebook_url}}" target="new">
                                                     <i class="fa fa-facebook"></i>
                                                 </a>
                                             </li>
                                         </ul>
                                     </div>
                                     <div class="call_btn d-none d-xl-block">
-                                        <a href="tel:020 7946 08002">020 7946 0800</a>
+                                        <a href="tel:{{$settings["general"]->phone_number}}">{{$settings["general"]->phone_number}}</a>
                                     </div>
                                 </div>
                             </div>

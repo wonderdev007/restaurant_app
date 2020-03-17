@@ -5,6 +5,8 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Reservation;
 use App\Member;
+use App\GeneralSettings;
+use App\SocialSettings;
 
 class StaticPagesController extends Controller
 {

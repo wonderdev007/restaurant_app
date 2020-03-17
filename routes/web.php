@@ -11,6 +11,10 @@
 |
 */
 
+use App\GeneralSettings;
+use App\SocialSettings;
+use App\SeoSettings;
+
 // Static Pages
 Route::get('/', 'StaticPagesController@home');
 Route::get('/menu', 'StaticPagesController@menu');
@@ -83,3 +87,16 @@ Route::get('/admin/login', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+
+View::composer(['home', 'pages/about', 'pages/contact', 'pages/offers', 'pages/reservations', 'pages/thank-you', 'menu/index', 'menu/single-menu'], function ($view) {
+    $general_settings = GeneralSettings::find(1);
+    $social_settings = SocialSettings::find(1);
+    $seo_settings = SeoSettings::find(1);
+
+    $view->with('settings', [
+        "general" => $general_settings,
+        "social" => $social_settings,
+        "seo" => $seo_settings
+    ]);
+});
