@@ -5,6 +5,8 @@ namespace App\Http\Controllers\admin;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\GeneralSettings;
+use App\SeoSettings;
+use App\SocialSettings;
 
 class SettingsController extends Controller
 {
@@ -43,5 +45,53 @@ class SettingsController extends Controller
         $general_settings->save();
 
         return redirect('/admin/settings/general');
+    }
+
+    public function seo() {
+        $id = 1;
+
+        $seo_settings = SeoSettings::find($id);
+
+        return view('admin/settings/seo', ['seo_settings' => $seo_settings]);
+    }
+
+    public function saveSeo() {
+        $id = 1;
+        request()->validate([
+            'description' => ['required', 'string'],
+            'keywords' => ['required', 'string'],
+        ]);
+
+        $seo_settings = SeoSettings::find($id);
+        $seo_settings->description = request('description');
+        $seo_settings->keywords = request('keywords');
+        $seo_settings->save();
+
+        return redirect('/admin/settings/seo');
+    }
+
+    public function socialAccounts() {
+        $id = 1;
+
+        $social_settings = SocialSettings::find($id);
+
+        return view('admin/settings/social', ['social_settings' => $social_settings]);
+    }
+
+    public function saveSocialAccounts() {
+        $id = 1;
+        request()->validate([
+            'facebook_url' => ['string'],
+            'twitter_url' => ['string'],
+            'instagram_url' => ['string']
+        ]);
+
+        $social_settings = SocialSettings::find($id);
+        $social_settings->facebook_url = request('facebook_url');
+        $social_settings->twitter_url = request('twitter_url');
+        $social_settings->instagram_url = request('instagram_url');
+        $social_settings->save();
+
+        return redirect('/admin/settings/social');
     }
 }
