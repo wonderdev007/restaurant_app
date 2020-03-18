@@ -1,6 +1,8 @@
 @extends('layouts.app')
 
-@section('title', 'Page Title')
+@section('title')
+{{$settings["general"]->site_title}} Menu
+@endsection
 
 @section('content')
     <!-- Banner -->

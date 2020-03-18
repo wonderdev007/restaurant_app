@@ -1,6 +1,8 @@
 @extends('layouts.landing')
 
-@section('title', 'Page Title')
+@section('title')
+{{$settings["general"]->site_title}} Restaurant
+@endsection
 
 @section('content')
     <section class="about-home">

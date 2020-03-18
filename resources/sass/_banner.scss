@@ -52,9 +52,15 @@
     background-image: url('../img/contact-bg.jpg');
 }
 
+.thankyou-bg {
+    background-image: url('../img/thankyou-bg.jpg');
+}
+
 // Small devices (landscape phones, 576px and up)
 @media (max-width: 767px) {
     .banner-area2 {
+        padding: 100px 0 80px;
+
         h3 {
             font-size: 2rem;
         }

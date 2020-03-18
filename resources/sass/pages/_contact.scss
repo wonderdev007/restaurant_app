@@ -11,7 +11,116 @@
         font-size: 1.1rem;
         line-height: 1.6;
     }
+
+    @media #{$mobile_device} {
+        padding-top: 2rem;
+    }
+
+    &__iframe {
+        width: 100%;
+        height: 450px;
+
+        @media #{$mobile_device} {
+            height: 300px;
+        }
+    }
+
+    .contact-btn {
+        color: #131230;
+        background: rgb(247, 197, 61);
+        font-family: "Roboto", sans-serif;
+        text-transform: uppercase;
+        font-size: 16px;
+        font-weight: 500;
+        border: 1px solid transparent;
+        display: inline-block;
+        padding: 12px 30px !important;
+        @include transition(.4s);
+
+        &:hover {
+            background: #fff;
+            border: 1px solid rgb(247, 197, 61);
+        }
+    }
 }
+
+.form-contact {
+
+    label {
+        font-size: 14px;
+    }
+
+    .form-group {
+        margin-bottom: 30px;
+    }
+
+    .form-control {
+        border: 1px solid #e5e6e9;
+        border-radius: 0px;
+        height: 48px;
+        padding-left: 18px;
+        font-size: 13px;
+        background: transparent;
+
+        &:focus {
+            outline: 0;
+            box-shadow: none;
+        }
+
+        &::placeholder {
+            font-weight: 300;
+            color: #999999;
+        }
+    }
+
+    textarea {
+        border-radius: 0px;
+        height: 100% !important;
+    }
+
+    // button{
+    //   border: 0;
+    // }
+}
+
+.contact-info {
+    margin-bottom: 25px;
+
+    &__icon {
+        margin-right: 20px;
+
+        i,
+        span {
+            color: $primary-color;
+            font-size: 36px;
+        }
+
+        .fa-phone {
+            margin-right: 5px;
+        }
+
+    }
+
+    .media-body {
+
+        h3 {
+            margin-bottom: 0;
+            font-size: 18px;
+            color: #2a2a2a;
+
+            a {
+                &:hover {
+                    color: $primary-color;
+                }
+            }
+        }
+
+        p {
+            color: #6e6e6e;
+        }
+    }
+}
+
 
 // Small devices (landscape phones, 576px and up)
 @media (max-width: 767px) {
