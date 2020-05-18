@@ -7,6 +7,7 @@ use App\Reservation;
 use App\Member;
 use App\GeneralSettings;
 use App\SocialSettings;
+use App\FoodCategory;
 
 class StaticPagesController extends Controller
 {
@@ -76,7 +77,8 @@ class StaticPagesController extends Controller
     }
 
     public function menu() {
-        return view('menu/index');
+        $categories = FoodCategory::All();
+        return view('menu/all-categories',  ['categories' => $categories]);
     }
 
     public function singleMenu($slug) {

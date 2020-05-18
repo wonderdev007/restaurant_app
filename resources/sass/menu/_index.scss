@@ -31,6 +31,7 @@
 
     &__food-content {
         padding: 30px;
+        min-height: 14.3rem;
         background: #f9f9ff;
         -webkit-transition: 0.5s;
         -moz-transition: 0.5s;
@@ -39,6 +40,8 @@
     }
 
     &__single-food {
+        margin-bottom: 3rem;
+
         &:hover .menu__food-content {
             background-color: $primary-color;
         }

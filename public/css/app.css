@@ -858,8 +858,13 @@ h2 {
 
 .menu__food-content {
   padding: 30px;
+  min-height: 14.3rem;
   background: #f9f9ff;
   transition: 0.5s;
+}
+
+.menu__single-food {
+  margin-bottom: 3rem;
 }
 
 .menu__single-food:hover .menu__food-content {
