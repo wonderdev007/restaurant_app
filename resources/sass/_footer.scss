@@ -1,0 +1,25 @@
+.footer {
+    padding: 2rem 5rem;
+    border-top: 1px solid $light-grey;
+
+    @media #{$tablet_device} {
+        padding: 2rem 2rem;
+    }
+
+    @media #{$mobile_device} {
+        padding: 2rem 0;
+    }
+
+    &__link {
+        color: $primary-color;
+
+        &:hover {
+            color: $primary-color-dark;
+        }
+    }
+
+    &__db-contact,
+    &__open-hours {
+        color: $dark-grey;
+    }
+}

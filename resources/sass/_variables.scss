@@ -1,39 +1,23 @@
-@import url('https://fonts.googleapis.com/css?family=Poppins:200,200i,300,300i,400,400i,500,500i,600,600i,700&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Poppins:200,200i,300,300i,400,400i,500,500i,600,600i,700&display=swap");
 
 // Body
 $body-bg: #f8fafc;
 
 // fonts
-$font1: 'Poppins',
-sans-serif;
+$font1: "Poppins", sans-serif;
 
 // Typography
-$font-family-sans-serif: 'Nunito',
-sans-serif;
+$font-family-sans-serif: "Nunito", sans-serif;
 $font-size-base: 0.9rem;
 $line-height-base: 1.6;
 
 // Colors
-$blue: #3490dc;
-$indigo: #6574cd;
-$purple: #9561e2;
-$pink: #f66d9b;
-$red: #e3342f;
-$orange: #f6993f;
-$yellow: #ffed4a;
-$green: #38c172;
-$teal: #4dc0b5;
-$cyan: #6cb2eb;
-
 $primary-color: rgb(245, 185, 46);
-$primary-color-light: #1dfa28;
-
-$darker-green: #039c0a;
-$darker-green-2: #03ca0d;
+$primary-color-dark: rgb(212, 159, 33);
 $dark-color: #2e2d2d;
 $light-grey: #dbdbdb;
 $dark-grey: #7c7c7c;
 
 $placeholder: #b0b0b0;
-$overlay: rgba(1, 7, 16, .8);
-$overlay2: rgba(1, 7, 16, .7);
+$overlay: rgba(1, 7, 16, 0.8);
+$overlay2: rgba(1, 7, 16, 0.7);

@@ -15,6 +15,8 @@
                 @endif
                 @yield('content')
             </section>
+
+            @include('includes.footer')
         </section>
 
     <!-- JavaScript Libraries -->
