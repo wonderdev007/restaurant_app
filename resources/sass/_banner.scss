@@ -10,7 +10,7 @@
     z-index: 1;
 
     &:after {
-        content: '';
+        content: "";
         position: absolute;
         top: 0;
         left: 0;
@@ -32,28 +32,27 @@
 }
 
 .menu-bg {
-    background-image: url('../img/menu-bg.jpg');
+    background-image: url("../img/menu-bg.jpg");
 }
 
-
 .reservations-bg {
-    background-image: url('../img/reservation-bg.jpg');
+    background-image: url("../img/reservation-bg.jpg");
 }
 
 .offers-bg {
-    background-image: url('../img/offers-bg.jpg');
+    background-image: url("../img/offers-bg.jpg");
 }
 
 .about-bg {
-    background-image: url('../img/about-bg.jpg');
+    background-image: url("../img/about-bg.jpg");
 }
 
 .contact-bg {
-    background-image: url('../img/contact-bg.jpg');
+    background-image: url("../img/contact-bg.jpg");
 }
 
 .thankyou-bg {
-    background-image: url('../img/thankyou-bg.jpg');
+    background-image: url("../img/thankyou-bg.jpg");
 }
 
 // Small devices (landscape phones, 576px and up)

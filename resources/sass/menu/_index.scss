@@ -6,13 +6,12 @@
         text-align: center;
     }
 
-
     &__img-wrapper {
         overflow: hidden;
 
-        -webkit-transition: .5s;
-        -moz-transition: .5s;
-        -o-transition: .5s;
+        -webkit-transition: 0.5s;
+        -moz-transition: 0.5s;
+        -o-transition: 0.5s;
     }
 
     &__img {
@@ -22,7 +21,7 @@
         object-position: center center;
         height: 350px;
         width: 100%;
-        transition: .5s;
+        transition: 0.5s;
     }
 
     &__category-title {
@@ -33,10 +32,10 @@
     &__food-content {
         padding: 30px;
         background: #f9f9ff;
-        -webkit-transition: .5s;
-        -moz-transition: .5s;
-        -o-transition: .5s;
-        transition: .5s;
+        -webkit-transition: 0.5s;
+        -moz-transition: 0.5s;
+        -o-transition: 0.5s;
+        transition: 0.5s;
     }
 
     &__single-food {

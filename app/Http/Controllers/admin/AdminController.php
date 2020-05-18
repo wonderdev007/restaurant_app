@@ -14,7 +14,7 @@ class AdminController extends Controller
     public function __construct() {
         $this->middleware('auth');
     }
-    public function dailyRevenueLast30() {
+    public function dashboard() {
         $estimated_income_last_30 = DB::select(DB::raw('
             SELECT (sum(guests_total) * 27) as total
             FROM reservations
