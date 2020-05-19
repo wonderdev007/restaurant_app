@@ -8,6 +8,7 @@ use App\Member;
 use App\GeneralSettings;
 use App\SocialSettings;
 use App\FoodCategory;
+use App\FoodItem;
 
 class StaticPagesController extends Controller
 {
@@ -78,10 +79,15 @@ class StaticPagesController extends Controller
 
     public function menu() {
         $categories = FoodCategory::All();
-        return view('menu/all-categories',  ['categories' => $categories]);
+        return view('/pages/menu/all-categories',  ['categories' => $categories]);
     }
 
     public function singleMenu($slug) {
-        return view('menu/single-menu', ["food_item" => ucfirst($slug)]);
+        $food_category = FoodCategory::where('title', '=', $slug)->first();
+        // dd(gettype($food_category->id));
+
+        $food_items = FoodItem::where('category_id', '=', $food_category->id)->get();
+        
+        return view('/pages/menu/single-menu', ["food_category" => ucfirst($slug), 'food_items' => $food_items]);
     }
 }

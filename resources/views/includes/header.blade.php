@@ -75,7 +75,7 @@
 
         <div id="logo" class="pull-left">
           <a href="/" class="scrollto">
-            <img src="{{$settings["general"]->logo_image_url}}" alt="">
+            <img src="/{{$settings["general"]->logo_image_url}}" alt="">
           </a>
         </div>
 

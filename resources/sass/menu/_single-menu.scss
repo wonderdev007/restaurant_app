@@ -1,5 +1,5 @@
 .single-menu-page {
-    padding: 4rem 5rem;
+    padding: 6rem 0;
 
     & .single-menu {
         &__title {
@@ -9,6 +9,7 @@
 
         &__wrapper {
             margin: 1rem 0;
+            padding: 0 0.5rem;
         }
 
         &__item {
@@ -20,16 +21,19 @@
 
         &__name,
         &__price {
-            font-size: 1.4rem;
+            font-size: 1.2rem;
+            font-weight: bolder;
         }
 
-        // &__name {
-        //     color: $dark-color;
-        // }
+        &__name {
+            color: $dark-color;
+        }
 
-        // &__price {
-        //     color: $darker-green;
-        // }
+        &__price {
+            color: $primary-color;
+            margin-top: -2px;
+            padding-left: 4px;
+        }
 
         // &__description {
         //     color: $dark-grey;

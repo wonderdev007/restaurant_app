@@ -29,7 +29,7 @@
                 @foreach($categories as $category)
                     <div class="col-md-6 col-sm-12">
                         <div class="menu__single-food">
-                            <a href="{{$category->title}}">
+                            <a href="/menu/{{$category->title}}">
                                 <div class="menu__img-wrapper">
                                     <img src="{{$category->image_url}}" class="img-fluid menu__img" alt="">
                                 </div>

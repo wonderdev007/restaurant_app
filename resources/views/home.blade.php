@@ -80,7 +80,7 @@
                             <div class="food-preview__text">
                                 <h3 class="food-preview__food-title">Entrees</h3>
                             </div>
-                            <img class="food-preview__food-image" src="img/menu/entree.jpg">
+                            <img class="food-preview__food-image" src="img/menu/entrees.jpg">
                         </div>
 
                         <div class="food-preview__slide">

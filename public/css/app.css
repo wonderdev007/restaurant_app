@@ -880,7 +880,7 @@ h2 {
 }
 
 .single-menu-page {
-  padding: 4rem 5rem;
+  padding: 6rem 0;
 }
 
 .single-menu-page .single-menu__title {
@@ -890,6 +890,7 @@ h2 {
 
 .single-menu-page .single-menu__wrapper {
   margin: 1rem 0;
+  padding: 0 0.5rem;
 }
 
 .single-menu-page .single-menu__item {
@@ -901,7 +902,18 @@ h2 {
 
 .single-menu-page .single-menu__name,
 .single-menu-page .single-menu__price {
-  font-size: 1.4rem;
+  font-size: 1.2rem;
+  font-weight: bolder;
+}
+
+.single-menu-page .single-menu__name {
+  color: #2e2d2d;
+}
+
+.single-menu-page .single-menu__price {
+  color: #f5b92e;
+  margin-top: -2px;
+  padding-left: 4px;
 }
 
 @media (max-width: 767px) {
