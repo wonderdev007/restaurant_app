@@ -48,7 +48,7 @@ class StaticPagesController extends Controller
         $reservation->reservation_time = request('reservation_time');
         $reservation->save();
 
-        return redirect('/reservations/thank-you');
+        return redirect('reservations/thank-you');
     }
 
     public function offers() {
@@ -70,11 +70,11 @@ class StaticPagesController extends Controller
         $member->phone_number = request('phone_number');
         $member->save();
 
-        return redirect('/offers/thank-you');
+        return redirect('offers/thank-you');
     }
 
     public function thankYou() {
-        return view('/pages/thank-you');
+        return view('pages/thank-you');
     }
 
     public function menu() {
