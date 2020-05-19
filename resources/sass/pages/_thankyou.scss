@@ -1,0 +1,39 @@
+.thankyou-page {
+    height: 70vh;
+    display: grid;
+    align-items: center;
+
+    &__title {
+        margin-bottom: 2rem;
+        font-size: 3rem;
+        font-weight: 700;
+    }
+
+    &__text {
+        font-size: 1.4rem;
+        line-height: 1.6;
+    }
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (max-width: 767px) {
+    .thankyou-page {
+        padding: 50px 20px;
+        overflow: visible;
+    }
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) and (max-width: 991px) {
+    .thankyou-page {
+        padding: 50px 20px;
+    }
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) and (max-width: 1199px) {
+}
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+}

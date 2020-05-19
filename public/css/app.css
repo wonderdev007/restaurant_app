@@ -1051,6 +1051,36 @@ h2 {
   }
 }
 
+.thankyou-page {
+  height: 70vh;
+  display: grid;
+  align-items: center;
+}
+
+.thankyou-page__title {
+  margin-bottom: 2rem;
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.thankyou-page__text {
+  font-size: 1.4rem;
+  line-height: 1.6;
+}
+
+@media (max-width: 767px) {
+  .thankyou-page {
+    padding: 50px 20px;
+    overflow: visible;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .thankyou-page {
+    padding: 50px 20px;
+  }
+}
+
 .contact-page {
   padding: 10rem;
 }
