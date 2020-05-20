@@ -57,7 +57,7 @@
 .slick-track:before,
 .slick-track:after {
     display: table;
-    content: '';
+    content: "";
 }
 
 .slick-track:after {
@@ -75,7 +75,7 @@
     min-height: 1px;
 }
 
-[dir='rtl'] .slick-slide {
+[dir="rtl"] .slick-slide {
     float: right;
 }
 
@@ -109,7 +109,6 @@
     display: none;
 }
 
-
 // Styling the default Slick dots
 .slick-dots {
     display: flex;
@@ -121,7 +120,7 @@
     list-style-type: none;
 
     li {
-        margin: 0 0.30rem;
+        margin: 0 0.3rem;
     }
 
     button {

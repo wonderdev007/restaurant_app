@@ -29,6 +29,7 @@
         <link href="/lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
         <link href="/lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
         <link rel="stylesheet" href="/fonts/flaticon/font/flaticon.css">
+        <link rel="stylesheet" href="/fonts/ionicons/css/ionicons.min.css">
 
         <!-- Styles -->
         <link rel="stylesheet" href="/css/owl.carousel.min.css">

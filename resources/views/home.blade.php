@@ -62,8 +62,7 @@
     <!-- slider_area_end -->
 
     <div class="services">
-          <div class="container">
-             
+        <div class="container">
             <div class="row">
               <div class="col-md-6 col-lg-3">
                 <div class="services__feature-icon d-block text-center">
@@ -110,10 +109,10 @@
                 </div>
               </div>
             </div>
-          </div>
-        </div> <!-- .section -->
+        </div>
+    </div> <!-- .section -->
 
-    <section class="about-home">
+    {{-- <section class="about-home">
         <div class="container">
             <div class="row">
                 <div class="col-xl-12 text-center">
@@ -125,7 +124,7 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> --}}
 
     <div class="menu-slider">
         <div class="container-fluid">
@@ -179,6 +178,59 @@
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+
+    <div class="why-us">
+      <div class="container">
+            <div class="row justify-content-center mb-5" data-aos="fade-up">
+              <div class="col-md-8  text-center">
+                <h2 class="mb-3">Why Choose Us</h2>
+                <p class="lead"> Are you looking for delicious food, a relaxed environment and good value? {{$settings["general"]->site_title}} is the perfect place for your next meal, either dine in or take away.</p>
+              </div>
+            </div>
+            <div class="row large-gutters">
+              <div class="col-md-6"  data-aos="fade-up" data-aos-delay="200">
+                <img src="images/why-us.jpg" alt="Image placeholder" class="img-fluid rounded">
+              </div>
+              <div class="col-md-6" data-aos="fade-up" data-aos-delay="300">
+                <div class="accordion" id="accordion">
+                  <div class="accordion-item">
+                    <h3 class="mb-0">
+                      <a class="btn-block p-3" data-toggle="collapse" href="#collapseOne" role="button" aria-expanded="true" aria-controls="collapseOne">Quality Cuisine <span class="icon"></span></a>
+                    </h3>
+                    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+                      <div class="p-3">
+                        <p>Imaginitive, stylish, striking starters and entrées that are packed full of flavour. All our products are handmade and prepared for your convenience. We only use carefully selected suppliers and have complete confidence in the origin and high standard of all our food.</p>
+                      </div>
+                    </div>
+                  </div> <!-- .accordion-item -->
+                  
+                  <div class="accordion-item">
+                    <h3 class="mb-0">
+                      <a class="btn-block p-3" data-toggle="collapse" href="#collapseTwo" role="button" aria-expanded="false" aria-controls="collapseTwo">Fresh Food <span class="icon"></span></a>
+                    </h3>
+                    <div id="collapseTwo" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+                      <div class="p-3">
+                        <p>A carefully selected and locally-focused supplier base means you can be sure the produce we offer is the very best and freshest available</p>
+                      </div>
+                    </div>
+                  </div> <!-- .accordion-item -->
+
+                  <div class="accordion-item">
+                    <h3 class="mb-0">
+                      <a class="btn-block p-3" data-toggle="collapse" href="#collapseThree" role="button" aria-expanded="false" aria-controls="collapseThree">Friendly Staff  <span class="icon"></span></a>
+                    </h3>
+                    <div id="collapseThree" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+                      <div class="p-3">
+                        <p>Here at {{$settings["general"]->site_title}} in London we pride ourselves on fantastic food and a great selection of wines, spirits and other drinks available for you to pick and choose from. We hope that you enjoy a beautiful meal in a relaxed atmosphere with your guests and our friendly team. </p>
+                      </div>
+                    </div>
+                  </div> <!-- .accordion-item -->
+
+                </div>
+              </div>
+            </div>
+      </div>
+    </div> <!-- .section -->
 
 @endsection

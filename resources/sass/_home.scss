@@ -62,7 +62,7 @@
 
 .menu-slider {
     height: auto;
-    padding-bottom: 6rem;
+    margin: 6rem 1.2rem;
 }
 
 .food-preview {
@@ -168,4 +168,50 @@ h2 {
     font-size: 3rem;
     font-weight: 700;
     margin-bottom: 3rem;
+}
+
+.why-us {
+    padding: 6rem 0;
+
+    .accordion .btn-block[aria-expanded="false"] .icon:before {
+        content: "\f2c7";
+    }
+
+    .accordion .btn-block[aria-expanded="true"] .icon:before {
+        content: "\f2f4";
+    }
+
+    .accordion .btn-block[aria-expanded="true"] {
+        color: $primary-color;
+    }
+
+    .accordion .btn-block .icon:before {
+        font-family: "Ionicons";
+        position: absolute;
+    }
+
+    .accordion .btn-block .icon {
+        position: absolute;
+        right: 30px;
+        height: 15px;
+        top: 50%;
+        -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
+        font-size: 16px;
+    }
+
+    .accordion .btn-block[aria-expanded="false"] {
+        color: #000;
+    }
+
+    .accordion .btn-block {
+        position: relative;
+        border-bottom: 1px solid #e6e6e6;
+    }
+
+    .accordion .btn-block .icon:before {
+        font-family: "Ionicons";
+        position: absolute;
+    }
 }

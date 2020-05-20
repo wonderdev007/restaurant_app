@@ -1,4 +1,6 @@
-@import url(https://fonts.googleapis.com/css?family=Poppins:200,200i,300,300i,400,400i,500,500i,600,600i,700&display=swap);/* Normal desktop :1200px. */
+@import url(https://fonts.googleapis.com/css?family=Poppins:200,200i,300,300i,400,400i,500,500i,600,600i,700&display=swap);@charset "UTF-8";
+
+/* Normal desktop :1200px. */
 
 /* Normal desktop :992px. */
 
@@ -752,7 +754,7 @@ body.mobile-nav-active #mobile-nav-toggle i {
 
 .menu-slider {
   height: auto;
-  padding-bottom: 6rem;
+  margin: 6rem 1.2rem;
 }
 
 .food-preview {
@@ -859,6 +861,50 @@ h2 {
   font-size: 3rem;
   font-weight: 700;
   margin-bottom: 3rem;
+}
+
+.why-us {
+  padding: 6rem 0;
+}
+
+.why-us .accordion .btn-block[aria-expanded=false] .icon:before {
+  content: "\F2C7";
+}
+
+.why-us .accordion .btn-block[aria-expanded=true] .icon:before {
+  content: "\F2F4";
+}
+
+.why-us .accordion .btn-block[aria-expanded=true] {
+  color: #f5b92e;
+}
+
+.why-us .accordion .btn-block .icon:before {
+  font-family: "Ionicons";
+  position: absolute;
+}
+
+.why-us .accordion .btn-block .icon {
+  position: absolute;
+  right: 30px;
+  height: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 16px;
+}
+
+.why-us .accordion .btn-block[aria-expanded=false] {
+  color: #000;
+}
+
+.why-us .accordion .btn-block {
+  position: relative;
+  border-bottom: 1px solid #e6e6e6;
+}
+
+.why-us .accordion .btn-block .icon:before {
+  font-family: "Ionicons";
+  position: absolute;
 }
 
 .menu {
