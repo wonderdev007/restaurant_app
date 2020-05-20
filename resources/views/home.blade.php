@@ -38,6 +38,37 @@
                         </div>
                     </div>
                 </div>
+                <div class="single_slider  d-flex align-items-center slider_bg_3 overlay">
+                    <div class="container">
+                        <div class="row align-items-center justify-content-center">
+                            <div class="col-xl-9 col-md-9 col-md-12">
+                                <div class="slider_text text-center">
+                                    <div class="deal_text">
+                                        <span>NEW</span>
+                                    </div>
+                                    <h3>Welcome to</h3>
+                                    <h4>{{$settings["general"]->site_title}}</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="single_slider  d-flex align-items-center slider_bg_4 overlay">
+                    <div class="container">
+                        <div class="row align-items-center justify-content-center">
+                            <div class="col-xl-9 col-md-9 col-md-12">
+                                <div class="slider_text text-center">
+                                    <div class="deal_text">
+                                        <span>NEW</span>
+                                    </div>
+                                    <h3>Welcome to</h3>
+                                    <h4>{{$settings["general"]->site_title}}</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
     </div>
     <!-- slider_area_end -->

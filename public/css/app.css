@@ -444,11 +444,19 @@ body.mobile-nav-active #mobile-nav-toggle i {
 }
 
 .slider_bg_1 {
-  background-image: url(/images/slide1.jpg?e9c53c810955e61c8e8ec882f3b75deb);
+  background-image: url(/images/slide1.jpg?630204750bc8f109272bef0cc2317876);
 }
 
 .slider_bg_2 {
-  background-image: url(/images/slide2.jpg?630204750bc8f109272bef0cc2317876);
+  background-image: url(/images/slide2.jpg?e9c53c810955e61c8e8ec882f3b75deb);
+}
+
+.slider_bg_3 {
+  background-image: url(/images/slide3.jpg?d6df878b4555600511cd443289e2fe0f);
+}
+
+.slider_bg_4 {
+  background-image: url(/images/slide4.jpg?391631cb9de9cedf783a7bb7089f1375);
 }
 
 .slider_area {
