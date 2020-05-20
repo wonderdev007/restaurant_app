@@ -696,12 +696,12 @@ body.mobile-nav-active #mobile-nav-toggle i {
   background-color: #f5b92e;
 }
 
-.services-section {
+.services {
   padding: 7em 0;
   background: url(/img/curve_line.svg) repeat-x bottom left;
 }
 
-.services-section__icon {
+.services__icon {
   text-align: center;
   height: 100px;
   width: 100px;
@@ -712,7 +712,7 @@ body.mobile-nav-active #mobile-nav-toggle i {
   background: #f5b92e;
 }
 
-.services-section__icon > span {
+.services__icon > span {
   color: #000;
   font-size: 40px;
   position: absolute;
@@ -721,7 +721,7 @@ body.mobile-nav-active #mobile-nav-toggle i {
   transform: translate(-50%, -50%);
 }
 
-.services-section__text {
+.services__text {
   color: #7c7c7c;
 }
 
