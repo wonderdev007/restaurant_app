@@ -11,6 +11,7 @@
             <div class="row">
                 <div class="col-lg-12">
                     <h3>Reservations</h3>
+                    <p>Breakfast, lunch, and dinner reservations of 4 or more guests Monday to Saturday</p>
                 </div>
             </div>
         </div>
@@ -20,7 +21,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 mx-auto">
-                    <h1 class="reservations-page__title text-center">Reserve a Table</h1>
+                    <h1 class="reservations-page__title text-center">Book a Table</h1>
 
                     <form method="POST" action="/reservations">
                         @csrf

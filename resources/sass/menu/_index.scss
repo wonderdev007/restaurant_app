@@ -1,17 +1,14 @@
 .menu {
-    padding: 5rem 0;
+    padding: 6rem 0;
 
     &__title {
         font-size: 3rem;
+        font-weight: 600;
         text-align: center;
     }
 
     &__img-wrapper {
         overflow: hidden;
-
-        -webkit-transition: 0.5s;
-        -moz-transition: 0.5s;
-        -o-transition: 0.5s;
     }
 
     &__img {
@@ -25,8 +22,8 @@
     }
 
     &__category-title {
-        font-size: 1.7rem;
-        font-weight: 500;
+        font-size: 2.3rem;
+        font-weight: 600;
     }
 
     &__food-content {

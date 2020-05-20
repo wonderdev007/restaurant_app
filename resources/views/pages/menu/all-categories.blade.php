@@ -10,7 +10,8 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <h3>Menu</h3>
+                    <h3>Our Menus</h3>
+                    <p>Re-defining the art of grilling.</p>
                 </div>
             </div>
         </div>
@@ -36,7 +37,7 @@
                             </a>
                             <div class="menu__food-content">
                                 <div class="d-flex justify-content-between">
-                                    <h5 class="menu__category-title">{{$category->title}}</h5>
+                                    <h3 class="menu__category-title">{{ucfirst($category->title)}}</h3>
                                 </div>
                                 <p class="menu__text pt-3">{{$category->description}}</p>
                             </div>

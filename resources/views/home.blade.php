@@ -82,7 +82,7 @@
                   </div>
                   <div>
                     <h3>Fresh Food</h3>
-                    <p class="services__text">A carefully selected and locally-focused supplier base means you can be sure the produce we offer is the very best and freshest available</p>
+                    <p class="services__text">A carefully selected and locally-focused supplier base means you can be sure the produce we offer is the very best and freshest available.</p>
                   </div>
                 </div>
               </div>

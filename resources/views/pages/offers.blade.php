@@ -11,6 +11,7 @@
             <div class="row">
                 <div class="col-lg-12">
                     <h3>Offers</h3>
+                    <p>Sign up to receive lastest offers</p>
                 </div>
             </div>
         </div>
@@ -20,7 +21,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8 mx-auto">
-                    <h1 class="offers-page__title text-center">Sign Up To Receive Offers</h1>
+                    <h1 class="offers-page__title text-center">Get Offers</h1>
 
                     <form method="POST" action="/offers">
                         @csrf
