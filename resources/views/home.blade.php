@@ -132,47 +132,59 @@
                 <div class="col-xl-12">
                     <h2 class="menu-slider__title text-center">Find Your Best Food</h2>
                     <div class="slider">
+                      <a href="/menu/starters">
                         <div class="food-preview__slide">
                             <div class="food-preview__text">
                                 <h3 class="food-preview__food-title">Starters</h3>
                             </div>
                             <img class="food-preview__food-image" src="img/menu/starter.jpg">
-                        </div>
+                        </div>  
+                      </a>
 
+                      <a href="/menu/burgers">
                         <div class="food-preview__slide">
                             <div class="food-preview__text">
                                 <h3 class="food-preview__food-title">Burgers</h3>
                             </div>
                             <img class="food-preview__food-image" src="img/menu/hamburger.jpg">
                         </div>
+                      </a>
 
+                      <a href="/menu/entrees">
                         <div class="food-preview__slide">
                             <div class="food-preview__text">
                                 <h3 class="food-preview__food-title">Entrees</h3>
                             </div>
                             <img class="food-preview__food-image" src="img/menu/entrees.jpg">
                         </div>
+                      </a>
 
+                      <a href="/menu/sides">
                         <div class="food-preview__slide">
                             <div class="food-preview__text">
                                 <h3 class="food-preview__food-title">Sides</h3>
                             </div>
                             <img class="food-preview__food-image" src="img/menu/sides.jpg">
                         </div>
+                      </a>
 
+                      <a href="/menu/deserts">
                         <div class="food-preview__slide">
                             <div class="food-preview__text">
                                 <h3 class="food-preview__food-title">Deserts</h3>
                             </div>
                             <img class="food-preview__food-image" src="img/menu/deserts.jpg">
                         </div>
+                      </a>
 
+                      <a href="/menu/drinks">
                         <div class="food-preview__slide">
                             <div class="food-preview__text">
                                 <h3 class="food-preview__food-title">Drinks</h3>
                             </div>
                             <img class="food-preview__food-image" src="img/menu/drinks.jpg">
                         </div>
+                      </a>
 
                     </div>
                 </div>
