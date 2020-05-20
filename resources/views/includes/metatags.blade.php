@@ -32,6 +32,5 @@
         <!-- Styles -->
         <link rel="stylesheet" href="/css/fontawesome.min.css">
         <link rel="stylesheet" href="/css/owl.carousel.min.css">
-        <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">
         <link rel="stylesheet" href="/css/app.css">
