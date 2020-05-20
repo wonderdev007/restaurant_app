@@ -490,19 +490,6 @@ body.mobile-nav-active #mobile-nav-toggle i {
   }
 }
 
-.slider_area .single_slider .slider_text .deal_text {
-  background: #f7c53d;
-  background-size: 100% 100%;
-  display: inline-block;
-  padding: 18px 42px;
-}
-
-.slider_area .single_slider .slider_text .deal_text span {
-  font-size: 20px;
-  font-weight: 400;
-  color: #fff;
-}
-
 .slider_area .single_slider .slider_text h3 {
   font-size: 100px;
   text-transform: uppercase;
