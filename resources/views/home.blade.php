@@ -16,8 +16,8 @@
                                     <div class="deal_text">
                                         <span>NEW</span>
                                     </div>
-                                    <h3>Find Your Favorite</h3>
-                                    <h4>Food</h4>
+                                    <h3>Welcome to</h3>
+                                    <h4>Flavoroso</h4>
                                 </div>
                             </div>
                         </div>
@@ -31,8 +31,8 @@
                                     <div class="deal_text">
                                         <span>NEW</span>
                                     </div>
-                                    <h3>Find Your Favorite</h3>
-                                    <h4>Food</h4>
+                                    <h3>Welcome to</h3>
+                                    <h4>Flavoroso</h4>
                                 </div>
                             </div>
                         </div>
@@ -41,6 +41,58 @@
             </div>
     </div>
     <!-- slider_area_end -->
+
+    <div class="services">
+          <div class="container">
+             
+            <div class="row">
+              <div class="col-md-6 col-lg-3">
+                <div class="services__feature-icon d-block text-center">
+                  <div class="services__icon">
+                    <span class="flaticon-soup"></span>
+                  </div>
+                  <div>
+                    <h3>Quality Cuisine</h3>
+                    <p class="services__text">Imaginitive, stylish, striking starters and entrées that are packed full of flavour.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 col-lg-3">
+                <div class="services__feature-icon d-block text-center">
+                  <div class="services__icon">
+                    <span class="flaticon-vegetables"></span>
+                  </div>
+                  <div>
+                    <h3>Fresh Food</h3>
+                    <p class="services__text">A carefully selected and locally-focused supplier base means you can be sure the produce we offer is the very best and freshest available</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="300">
+                <div class="services__feature-icon d-block text-center">
+                  <div class="services__icon">
+                    <span class="flaticon-pancake"></span>
+                  </div>
+                  <div>
+                    <h3>Friendly Staff</h3>
+                    <p class="services__text">In the restaurant industry, good customer service means being friendly, available, attentive and quick to take care of customers' needs.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="500">
+                <div class="services__feature-icon d-block text-center">
+                  <div class="services__icon">
+                    <span class="flaticon-tray"></span>
+                  </div>
+                  <div>
+                    <h3>Easy Reservation</h3>
+                    <p class="services__text">Simple and easy form for reservations within seconds.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div> <!-- .section -->
 
     <section class="about-home">
         <div class="container">
@@ -60,7 +112,7 @@
         <div class="container-fluid">
             <div class="row">
                 <div class="col-xl-12">
-                    <h2 class="text-center">OUR MENU</h2>
+                    <h2 class="menu-slider__title text-center">Find Your Best Food</h2>
                     <div class="slider">
                         <div class="food-preview__slide">
                             <div class="food-preview__text">

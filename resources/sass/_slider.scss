@@ -12,7 +12,7 @@
     width: 100vw;
 
     .single_slider {
-        height: 80vh;
+        height: 93vh;
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center center;
@@ -38,7 +38,6 @@
 
                 span {
                     font-size: 20px;
-                    // font-family: $font3;
                     font-weight: 400;
                     color: #fff;
                 }
@@ -47,20 +46,17 @@
             h3 {
                 font-size: 100px;
                 text-transform: uppercase;
-                // letter-spacing: 2px;
                 font-weight: 400;
                 line-height: 100px;
                 margin-bottom: 27px;
                 color: #fff;
 
-                // font-family: $font3;
                 span {
                     font-weight: 700;
                 }
 
                 @media #{$mobile_device} {
                     font-size: 40px;
-                    //    letter-spacing: 3px;
                     line-height: 45px;
                 }
 

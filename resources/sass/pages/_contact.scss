@@ -28,14 +28,13 @@
     .contact-btn {
         color: #131230;
         background: rgb(247, 197, 61);
-        font-family: "Roboto", sans-serif;
         text-transform: uppercase;
         font-size: 16px;
         font-weight: 500;
         border: 1px solid transparent;
         display: inline-block;
         padding: 12px 30px !important;
-        @include transition(.4s);
+        @include transition(0.4s);
 
         &:hover {
             background: #fff;
@@ -45,7 +44,6 @@
 }
 
 .form-contact {
-
     label {
         font-size: 14px;
     }
@@ -77,10 +75,6 @@
         border-radius: 0px;
         height: 100% !important;
     }
-
-    // button{
-    //   border: 0;
-    // }
 }
 
 .contact-info {
@@ -98,11 +92,9 @@
         .fa-phone {
             margin-right: 5px;
         }
-
     }
 
     .media-body {
-
         h3 {
             margin-bottom: 0;
             font-size: 18px;
@@ -121,7 +113,6 @@
     }
 }
 
-
 // Small devices (landscape phones, 576px and up)
 @media (max-width: 767px) {
     .contact-page {
@@ -138,7 +129,9 @@
 }
 
 // Large devices (desktops, 992px and up)
-@media (min-width: 992px) and (max-width: 1199px) {}
+@media (min-width: 992px) and (max-width: 1199px) {
+}
 
 // Extra large devices (large desktops, 1200px and up)
-@media (min-width: 1200px) {}
+@media (min-width: 1200px) {
+}
