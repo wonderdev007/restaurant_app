@@ -17,7 +17,7 @@
                                         <span>NEW</span>
                                     </div>
                                     <h3>Welcome to</h3>
-                                    <h4>Flavoroso</h4>
+                                    <h4>{{$settings["general"]->site_title}}</h4>
                                 </div>
                             </div>
                         </div>
@@ -32,7 +32,7 @@
                                         <span>NEW</span>
                                     </div>
                                     <h3>Welcome to</h3>
-                                    <h4>Flavoroso</h4>
+                                    <h4>{{$settings["general"]->site_title}}</h4>
                                 </div>
                             </div>
                         </div>
@@ -100,7 +100,7 @@
                 <div class="col-xl-12 text-center">
                     <h2 class="about-home__title">Who We Are</h2>
 
-                    <p>Grassfed Grill is an all-day dining space and bar in London with a strong ‘natural’ wine focus, serving contemporary European dishes, inspired by the ‘bistronomy’ movement and our favourite eateries in Paris, Copenhagen, Barcelona, Stockholm & Berlin.</p>
+                    <p>{{$settings["seo"]->description}}</p>
 
                     <button class="btn about-home__btn mt-5">Discover our Story</button>
                 </div>

@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="/assets/vendor/fonts/material-design-iconic-font/css/materialdesignicons.min.css">
     <link rel="stylesheet" href="/assets/vendor/charts/c3charts/c3.css">
     <link rel="stylesheet" href="/assets/vendor/fonts/flag-icon-css/flag-icon.min.css">
-    <title>FoodCircle Admin Dashboard</title>
+    <title>{{$settings["general"]->site_title}} Admin Dashboard</title>
   </head>
 
   <body>
@@ -29,7 +29,7 @@
       <!-- ============================================================== -->
       <div class="dashboard-header">
         <nav class="navbar navbar-expand-lg bg-white fixed-top">
-          <a class="navbar-brand" href="/admin">FoodCircle</a>
+          <a class="navbar-brand" href="/admin">{{$settings["general"]->site_title}}</a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
