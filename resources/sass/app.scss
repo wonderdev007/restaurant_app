@@ -18,4 +18,8 @@
 .app-layout {
     margin-top: 70px;
     overflow-x: hidden;
+
+    @media #{$mobile_device} {
+        margin-top: 60px;
+    }
 }
