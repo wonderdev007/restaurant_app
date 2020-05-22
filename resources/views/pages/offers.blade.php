@@ -21,7 +21,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8 mx-auto">
-                    <h1 class="offers-page__title text-center">Get Offers</h1>
+                    <h1 class="title text-center">Get Offers</h1>
 
                     <form method="POST" action="/offers">
                         @csrf
@@ -67,7 +67,7 @@
                         </div>
                     </form>
                     <div class="mt-5">
-                        <p class="text-center">In signing up I acknowledge that I am 18 years of age or older and want to recieve email from FoodCircle</p>
+                        <p class="text-center">In signing up I acknowledge that I am 18 years of age or older and want to recieve email from {{$settings["general"]->site_title}}</p>
                     </div>
                 </div>
             </div>

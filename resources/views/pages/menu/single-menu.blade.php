@@ -23,7 +23,7 @@
                     <div class="content-box single-menu">
                         <div class="row">
                             <div class="col-md-12 mb-2">
-                                <h1 class="single-menu__title text-center">{{$food_category}}</h1>
+                                <h1 class="single-menu__title title text-center">{{$food_category}}</h1>
                             </div>
 
                             @foreach($food_items as $key => $food_item)

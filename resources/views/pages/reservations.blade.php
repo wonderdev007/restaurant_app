@@ -21,7 +21,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 mx-auto">
-                    <h1 class="reservations-page__title text-center">Book a Table</h1>
+                    <h1 class="title text-center">Book a Table</h1>
 
                     <form method="POST" action="/reservations">
                         @csrf

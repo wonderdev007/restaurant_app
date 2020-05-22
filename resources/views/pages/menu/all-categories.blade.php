@@ -23,7 +23,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <h3 class="menu__title mb-5">We serve delicious food</h3>
+                    <h3 class="title text-center mb-5">We serve delicious food</h3>
                 </div>
             </div>
             <div class="row">

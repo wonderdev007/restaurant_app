@@ -60,7 +60,7 @@ span {
 
 @media (max-width: 767px) {
   .title {
-    font-size: 2.5rem;
+    font-size: 2.2rem;
   }
 }
 
@@ -407,7 +407,9 @@ body.mobile-nav-active #mobile-nav-toggle i {
 }
 
 .banner-area2 {
-  padding: 220px 0 210px;
+  height: 50vh;
+  display: grid;
+  align-content: center;
   z-index: 1;
 }
 
@@ -427,15 +429,28 @@ body.mobile-nav-active #mobile-nav-toggle i {
   text-transform: uppercase;
   letter-spacing: 2px;
   font-weight: 400;
-  line-height: 100px;
+  line-height: 80px;
   margin-bottom: 27px;
   color: #fff;
 }
 
+@media (max-width: 767px) {
+  .banner-area2 h3 {
+    margin: 0;
+  }
+}
+
 .banner-area2 p {
-  font-size: 1.7rem;
+  font-size: 1.4rem;
   font-weight: 300;
+  font-family: Nunito;
   color: #fff;
+}
+
+@media (max-width: 767px) {
+  .banner-area2 p {
+    font-size: 1.2rem;
+  }
 }
 
 .menu-bg {
@@ -464,7 +479,7 @@ body.mobile-nav-active #mobile-nav-toggle i {
 
 @media (max-width: 767px) {
   .banner-area2 {
-    padding: 100px 0 80px;
+    height: 40vh;
   }
 
   .banner-area2 h3 {
@@ -1045,9 +1060,21 @@ body.mobile-nav-active #mobile-nav-toggle i {
   transition: 0.5s;
 }
 
+@media (max-width: 767px) {
+  .menu__img {
+    height: 280px;
+  }
+}
+
 .menu__category-title {
   font-size: 2.3rem;
   font-weight: 600;
+}
+
+@media (max-width: 767px) {
+  .menu__category-title {
+    font-size: 2rem;
+  }
 }
 
 .menu__food-content {
@@ -1078,7 +1105,6 @@ body.mobile-nav-active #mobile-nav-toggle i {
 }
 
 .single-menu-page .single-menu__title {
-  font-size: 2.5rem;
   color: #f5b92e;
 }
 
@@ -1160,12 +1186,6 @@ body.mobile-nav-active #mobile-nav-toggle i {
   padding: 6rem;
 }
 
-.reservations-page__title {
-  margin-bottom: 2rem;
-  font-size: 3rem;
-  font-weight: 700;
-}
-
 .reservations-page__btn {
   color: #131230;
   background: #f7c53d;
@@ -1201,12 +1221,6 @@ body.mobile-nav-active #mobile-nav-toggle i {
 
 .offers-page {
   padding: 6rem;
-}
-
-.offers-page__title {
-  margin-bottom: 2rem;
-  font-size: 3rem;
-  font-weight: 700;
 }
 
 .offers-page__btn {
