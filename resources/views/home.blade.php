@@ -5,7 +5,7 @@
 @endsection
 
 @section('content')
-    <!-- slider_area_start -->
+    <!--================ Slider Section Start =================-->
     <section class="slider_area">
             <div class="slider_active owl-carousel">
                 <div class="single_slider  d-flex align-items-center slider_bg_1 overlay">
@@ -59,8 +59,9 @@
                 </div>
             </div>
     </section>
-    <!-- slider_area_end -->
+    <!--================ Slider Section End =================-->
 
+    <!--================ Services Section Start =================-->
     <section class="services">
         <div class="container">
             <div class="row">
@@ -70,7 +71,7 @@
                     <span class="flaticon-soup"></span>
                   </div>
                   <div>
-                    <h3>Quality Cuisine</h3>
+                    <h3 class="services__title">Quality Cuisine</h3>
                     <p class="services__text">Imaginitive, stylish, striking starters and entrées that are packed full of flavour.</p>
                   </div>
                 </div>
@@ -81,7 +82,7 @@
                     <span class="flaticon-vegetables"></span>
                   </div>
                   <div>
-                    <h3>Fresh Food</h3>
+                    <h3 class="services__title">Fresh Food</h3>
                     <p class="services__text">A carefully selected and locally-focused supplier base means you can be sure the produce we offer is the very best and freshest available.</p>
                   </div>
                 </div>
@@ -92,7 +93,7 @@
                     <span class="flaticon-pancake"></span>
                   </div>
                   <div>
-                    <h3>Friendly Staff</h3>
+                    <h3 class="services__title">Friendly Staff</h3>
                     <p class="services__text">In the restaurant industry, good customer service means being friendly, available, attentive and quick to take care of customers' needs.</p>
                   </div>
                 </div>
@@ -103,34 +104,24 @@
                     <span class="flaticon-tray"></span>
                   </div>
                   <div>
-                    <h3>Easy Reservation</h3>
+                    <h3 class="services__title">Easy Reservation</h3>
                     <p class="services__text">Simple and easy form for reservations within seconds.</p>
                   </div>
                 </div>
               </div>
             </div>
         </div>
-    </section> <!-- .section -->
+    </section>
+    <!--================ Services Section End =================-->
 
-    {{-- <section class="about-home">
-        <div class="container">
-            <div class="row">
-                <div class="col-xl-12 text-center">
-                    <h2 class="about-home__title">Who We Are</h2>
 
-                    <p>{{$settings["seo"]->description}}</p>
-
-                    <button class="btn about-home__btn mt-5">Discover our Story</button>
-                </div>
-            </div>
-        </div>
-    </section> --}}
-
+    <!--================ Menu SLider Section Start =================-->
     <section class="menu-slider">
         <div class="container-fluid">
             <div class="row">
                 <div class="col-xl-12">
-                    <h2 class="menu-slider__title text-center">Find Your Best Food</h2>
+                  <div class="food-preview">
+                    <h2 class="title text-center">Find Your Best Food</h2>
                     <div class="slider">
                       <a href="/menu/starters">
                         <div class="food-preview__slide">
@@ -187,10 +178,12 @@
                       </a>
 
                     </div>
+                  </div>
                 </div>
             </div>
         </div>
     </section>
+    <!--================ Menu Section End =================-->
 
     <!--================Offer Section Start =================-->
     <section class="home-offer">
@@ -211,15 +204,16 @@
     </section>
     <!--================Offer Section End =================-->
 
+    <!--================ Why-Us Section Start =================-->
     <section class="why-us">
       <div class="container">
             <div class="row justify-content-center mb-5" data-aos="fade-up">
-              <div class="col-md-8  text-center">
-                <h2 class="mb-3">Why Choose Us</h2>
+              <div class="col-md-8 text-center">
+                <h2 class="title mb-3">Why Choose Us</h2>
                 <p class="lead"> Are you looking for delicious food, a relaxed environment and good value? {{$settings["general"]->site_title}} is the perfect place for your next meal, either dine in or take away.</p>
               </div>
             </div>
-            <div class="row large-gutters">
+            <div class="row">
               <div class="col-md-6"  data-aos="fade-up" data-aos-delay="200">
                 <img src="images/why-us.jpg" alt="Image placeholder" class="img-fluid rounded">
               </div>
@@ -227,7 +221,7 @@
                 <div class="accordion" id="accordion">
                   <div class="accordion-item">
                     <h3 class="mb-0">
-                      <a class="btn-block p-3" data-toggle="collapse" href="#collapseOne" role="button" aria-expanded="true" aria-controls="collapseOne">Quality Cuisine <span class="icon"></span></a>
+                      <a class="why-us__service btn-block p-3" data-toggle="collapse" href="#collapseOne" role="button" aria-expanded="true" aria-controls="collapseOne">Quality Cuisine <span class="icon"></span></a>
                     </h3>
                     <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
                       <div class="p-3">
@@ -238,7 +232,7 @@
                   
                   <div class="accordion-item">
                     <h3 class="mb-0">
-                      <a class="btn-block p-3" data-toggle="collapse" href="#collapseTwo" role="button" aria-expanded="false" aria-controls="collapseTwo">Fresh Food <span class="icon"></span></a>
+                      <a class="why-us__service btn-block p-3" data-toggle="collapse" href="#collapseTwo" role="button" aria-expanded="false" aria-controls="collapseTwo">Fresh Food <span class="icon"></span></a>
                     </h3>
                     <div id="collapseTwo" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
                       <div class="p-3">
@@ -249,7 +243,7 @@
 
                   <div class="accordion-item">
                     <h3 class="mb-0">
-                      <a class="btn-block p-3" data-toggle="collapse" href="#collapseThree" role="button" aria-expanded="false" aria-controls="collapseThree">Friendly Staff  <span class="icon"></span></a>
+                      <a class="why-us__service btn-block p-3" data-toggle="collapse" href="#collapseThree" role="button" aria-expanded="false" aria-controls="collapseThree">Friendly Staff  <span class="icon"></span></a>
                     </h3>
                     <div id="collapseThree" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
                       <div class="p-3">
@@ -262,6 +256,7 @@
               </div>
             </div>
       </div>
-    </section> <!-- .section -->
+    </section> 
+    <!--================ Why-Us Section End =================-->
 
 @endsection

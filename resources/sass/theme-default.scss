@@ -42,6 +42,16 @@ span {
     font-family: $paragraph-font;
 }
 
+.title {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 3rem;
+
+    @media #{$mobile_device} {
+        font-size: 2.5rem;
+    }
+}
+
 textarea:focus,
 input:focus {
     outline: none;

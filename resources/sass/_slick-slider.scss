@@ -1,5 +1,9 @@
 .slick-slide {
     margin: 0px 20px;
+
+    @media #{$mobile_device} {
+        margin: 0;
+    }
 }
 
 .slick-slide img {

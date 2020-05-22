@@ -52,6 +52,18 @@ span {
   font-family: "Open Sans", Arial, sans-serif;
 }
 
+.title {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 3rem;
+}
+
+@media (max-width: 767px) {
+  .title {
+    font-size: 2.5rem;
+  }
+}
+
 textarea:focus,
 input:focus {
   outline: none;
@@ -579,6 +591,12 @@ body.mobile-nav-active #mobile-nav-toggle i {
   margin: 0px 20px;
 }
 
+@media (max-width: 767px) {
+  .slick-slide {
+    margin: 0;
+  }
+}
+
 .slick-slide img {
   width: 100%;
 }
@@ -733,38 +751,14 @@ body.mobile-nav-active #mobile-nav-toggle i {
   transform: translate(-50%, -50%);
 }
 
-.services__text {
-  color: #7c7c7c;
-}
-
-.about-home {
-  height: 50vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
 @media (max-width: 767px) {
-  .about-home__title {
-    font-size: 2.2rem;
+  .services__title {
+    font-size: 1.6rem;
   }
 }
 
-.about-home__btn {
-  color: #131230;
-  background: #f7c53d;
-  text-transform: uppercase;
-  font-size: 16px;
-  font-weight: 500;
-  border: 1px solid transparent;
-  display: inline-block;
-  padding: 12px 30px !important;
-  transition: 0.4s;
-}
-
-.about-home__btn:hover {
-  background: #fff;
-  border: 1px solid #f7c53d;
+.services__text {
+  color: #7c7c7c;
 }
 
 .menu-slider {
@@ -772,29 +766,20 @@ body.mobile-nav-active #mobile-nav-toggle i {
   margin: 6rem 1.2rem;
 }
 
-.food-preview {
-  background: #f4f8fb;
-  padding: 100px;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
+@media (max-width: 767px) {
+  .menu-slider {
+    margin: 6rem 0;
+  }
 }
 
-.food-preview__title {
-  text-align: center;
-  margin-bottom: 3rem;
-}
-
-.food-preview__food-slider {
+.menu-slider .food-preview__food-slider {
   width: 100%;
   overflow: hidden;
   position: relative;
   font-size: 0;
 }
 
-.food-preview__slide {
+.menu-slider .food-preview__slide {
   position: relative;
   height: 450px;
   cursor: pointer;
@@ -802,7 +787,13 @@ body.mobile-nav-active #mobile-nav-toggle i {
   white-space: normal;
 }
 
-.food-preview__slide:before {
+@media (max-width: 767px) {
+  .menu-slider .food-preview__slide {
+    height: 350px;
+  }
+}
+
+.menu-slider .food-preview__slide:before {
   position: absolute;
   content: "";
   left: 0;
@@ -814,7 +805,7 @@ body.mobile-nav-active #mobile-nav-toggle i {
   opacity: 0.3;
 }
 
-.food-preview__background {
+.menu-slider .food-preview__background {
   background: white;
   top: 0;
   bottom: 0;
@@ -825,7 +816,7 @@ body.mobile-nav-active #mobile-nav-toggle i {
   transition: transform 0.3s ease-in-out;
 }
 
-.food-preview__content {
+.menu-slider .food-preview__content {
   position: absolute;
   z-index: 2;
   padding: 20px;
@@ -836,7 +827,7 @@ body.mobile-nav-active #mobile-nav-toggle i {
   justify-items: center;
 }
 
-.food-preview__text {
+.menu-slider .food-preview__text {
   position: absolute;
   z-index: 3;
   top: 50%;
@@ -844,14 +835,20 @@ body.mobile-nav-active #mobile-nav-toggle i {
   transform: translate(-50%, -50%);
 }
 
-.food-preview__food-title {
+.menu-slider .food-preview__food-title {
   color: #f5b92e;
   color: #fff;
   font-size: 3rem;
   font-weight: 900;
 }
 
-.food-preview__food-description {
+@media (max-width: 767px) {
+  .menu-slider .food-preview__food-title {
+    font-size: 2.3rem;
+  }
+}
+
+.menu-slider .food-preview__food-description {
   font-size: 0.8rem;
   font-weight: 400;
   line-height: 1.8;
@@ -860,7 +857,7 @@ body.mobile-nav-active #mobile-nav-toggle i {
   justify-content: center;
 }
 
-.food-preview__food-image {
+.menu-slider .food-preview__food-image {
   height: 100%;
   width: 100%;
   -o-object-fit: cover;
@@ -868,18 +865,18 @@ body.mobile-nav-active #mobile-nav-toggle i {
   transition: transform 0.3s ease-in-out;
 }
 
-.food-preview__food-image:hover {
+.menu-slider .food-preview__food-image:hover {
   transform: scale(1.1);
-}
-
-h2 {
-  font-size: 3rem;
-  font-weight: 700;
-  margin-bottom: 3rem;
 }
 
 .why-us {
   padding: 6rem 0;
+}
+
+@media (max-width: 767px) {
+  .why-us__service {
+    font-size: 1.6rem;
+  }
 }
 
 .why-us .accordion .btn-block[aria-expanded=false] .icon:before {
