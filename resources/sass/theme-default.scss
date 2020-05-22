@@ -24,6 +24,10 @@ a:hover,
     text-decoration: none;
 }
 
+.form-control:focus {
+    border-color: $primary-color;
+}
+
 h1,
 h2,
 h3,
@@ -36,6 +40,11 @@ h6 {
 p,
 span {
     font-family: $paragraph-font;
+}
+
+textarea:focus,
+input:focus {
+    outline: none;
 }
 
 .overlay {
