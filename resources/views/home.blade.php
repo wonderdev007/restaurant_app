@@ -6,7 +6,7 @@
 
 @section('content')
     <!-- slider_area_start -->
-    <div class="slider_area">
+    <section class="slider_area">
             <div class="slider_active owl-carousel">
                 <div class="single_slider  d-flex align-items-center slider_bg_1 overlay">
                     <div class="container">
@@ -58,10 +58,10 @@
                     </div>
                 </div>
             </div>
-    </div>
+    </section>
     <!-- slider_area_end -->
 
-    <div class="services">
+    <section class="services">
         <div class="container">
             <div class="row">
               <div class="col-md-6 col-lg-3">
@@ -110,7 +110,7 @@
               </div>
             </div>
         </div>
-    </div> <!-- .section -->
+    </section> <!-- .section -->
 
     {{-- <section class="about-home">
         <div class="container">
@@ -126,7 +126,7 @@
         </div>
     </section> --}}
 
-    <div class="menu-slider">
+    <section class="menu-slider">
         <div class="container-fluid">
             <div class="row">
                 <div class="col-xl-12">
@@ -190,9 +190,28 @@
                 </div>
             </div>
         </div>
-    </div>
+    </section>
 
-    <div class="why-us">
+    <!--================Offer Section Start =================-->
+    <section class="home-offer">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm">
+            <img class="home-offer__card-img" src="images/offer-img.jpg" alt="">
+          </div>
+          <div class="col-sm">
+            <div class="home-offer__offer-card">
+              <h3>Beef Steak Offer</h3>
+              <h2>50% OFF</h2>
+              <a class="home-offer__offer-button" href="#">Read More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--================Offer Section End =================-->
+
+    <section class="why-us">
       <div class="container">
             <div class="row justify-content-center mb-5" data-aos="fade-up">
               <div class="col-md-8  text-center">
@@ -243,6 +262,6 @@
               </div>
             </div>
       </div>
-    </div> <!-- .section -->
+    </section> <!-- .section -->
 
 @endsection

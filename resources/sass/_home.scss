@@ -215,3 +215,95 @@ h2 {
         position: absolute;
     }
 }
+
+.home-offer {
+    padding: 8rem 0;
+    background-color: $lighter-grey;
+
+    &__card-img {
+        width: 100%;
+        border-radius: calc(0.25rem - 1px);
+
+        vertical-align: middle;
+        border-style: none;
+    }
+
+    &__offer-card {
+        background: $primary-color;
+        color: white;
+        text-align: center;
+        padding: 45px 20px;
+        box-shadow: -13px 2px 20px 0px rgba(8, 6, 89, 0.2);
+        width: 120%;
+
+        @media (max-width: 576px) {
+            width: 100%;
+        }
+
+        @media (min-width: 576px) {
+            position: relative;
+            left: -110px;
+            top: 70px;
+            margin-bottom: 70px;
+        }
+
+        @media (min-width: 992px) {
+            padding: 80px 20px;
+        }
+
+        h3 {
+            font-size: 20px;
+            text-transform: capitalize;
+            color: white;
+            margin-bottom: 10px;
+
+            @media (min-width: 992px) {
+                font-size: 40px;
+                margin-bottom: 25px;
+            }
+        }
+
+        h2 {
+            font-size: 30px;
+            text-transform: uppercase;
+            color: white;
+            margin-bottom: 15px;
+
+            @media (min-width: 992px) {
+                font-size: 60px;
+                margin-bottom: 25px;
+            }
+        }
+    }
+
+    &__offer-button {
+        border: 1px solid #fff;
+
+        display: inline-block;
+        color: #fff;
+        font-size: 14px;
+        font-weight: 600;
+        font-family: $font1;
+        border-radius: 30px;
+        padding: 12px 35px;
+        text-transform: capitalize;
+        -webkit-transition: all 0.3s ease 0s;
+        -moz-transition: all 0.3s ease 0s;
+        -o-transition: all 0.3s ease 0s;
+        transition: all 0.3s ease 0s;
+
+        &:hover {
+            color: #fff;
+            background-color: $primary-color-light;
+        }
+
+        @media (min-width: 600px) {
+            padding: 14px 45px;
+            font-size: 18px;
+        }
+
+        @media (min-width: 1100px) {
+            padding: 16px 55px;
+        }
+    }
+}
