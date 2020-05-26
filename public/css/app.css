@@ -171,8 +171,8 @@ input:focus {
   margin-top: 6px;
   margin-left: 18px;
   font-size: 2rem;
-  font-family: "Pacifico", cursive;
-  font-family: "Kalam", cursive;
+  font-family: "Nothing You Could Do", cursive;
+  font-weight: 600;
 }
 
 @media (min-width: 1024px) {

@@ -24,7 +24,8 @@
 
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@700&display=swap" rel="stylesheet">        <link href="/lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Nothing+You+Could+Do&display=swap" rel="stylesheet">        
+        <link href="/lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
         <link rel="stylesheet" href="/fonts/flaticon/font/flaticon.css">
         <link rel="stylesheet" href="/fonts/ionicons/css/ionicons.min.css">
 
