@@ -160,7 +160,18 @@ input:focus {
 }
 
 #header #logo {
-  float: left;
+  display: flex;
+  align-items: center;
+  height: 60px;
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  margin-top: 6px;
+  margin-left: 18px;
+  font-size: 2rem;
+  font-family: "Pacifico", cursive;
+  font-family: "Kalam", cursive;
 }
 
 @media (min-width: 1024px) {
@@ -179,7 +190,13 @@ input:focus {
     top: 0;
     right: 0;
     margin-left: 18px;
+    margin-top: 6px;
+    font-size: 1.8rem;
   }
+}
+
+#header #logo a {
+  color: #f5b92e;
 }
 
 #header #logo img {
