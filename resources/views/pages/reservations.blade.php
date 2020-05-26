@@ -20,7 +20,7 @@
     <div class="reservations-page">
         <div class="container">
             <div class="row">
-                <div class="col-lg-8 mx-auto">
+                <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8 mx-auto">
                     <h1 class="title text-center">Book a Table</h1>
 
                     <form method="POST" action="/reservations">
