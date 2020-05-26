@@ -1,7 +1,10 @@
 .services {
     padding: 7em 0;
-
     background: url(/img/curve_line.svg) repeat-x bottom left;
+
+    @media #{$mobile_device} {
+        padding: 5em 0 6rem;
+    }
 
     &__icon {
         text-align: center;
@@ -27,7 +30,7 @@
 
     &__title {
         @media #{$mobile_device} {
-            font-size: 1.6rem;
+            font-size: 1.5rem;
         }
     }
 

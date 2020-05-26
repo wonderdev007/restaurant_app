@@ -764,6 +764,12 @@ body.mobile-nav-active #mobile-nav-toggle i {
   background: url(/img/curve_line.svg) repeat-x bottom left;
 }
 
+@media (max-width: 767px) {
+  .services {
+    padding: 5em 0 6rem;
+  }
+}
+
 .services__icon {
   text-align: center;
   height: 100px;
@@ -786,7 +792,7 @@ body.mobile-nav-active #mobile-nav-toggle i {
 
 @media (max-width: 767px) {
   .services__title {
-    font-size: 1.6rem;
+    font-size: 1.5rem;
   }
 }
 
