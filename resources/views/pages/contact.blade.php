@@ -26,7 +26,6 @@
                 <iframe class="contact-page__iframe mt-2" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyA0s1a7phLN0iaD6-UE7m4qP-z21pH0eSc&q=London/23+Change+Alley" height="450" frameborder="0" style="border:0" allowfullscreen="allowfullscreen"></iframe>
 
                 <div class="row mt-5">
-
                     <div class="col-lg-8">
                         <form class="form-contact contact_form" action="contact_process.php" method="post" id="contactForm">
                             <div class="row">
