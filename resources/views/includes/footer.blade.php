@@ -26,6 +26,8 @@
               <li><a class="footer__link" href="#">Terms of Use</a></li>
               <li><a class="footer__link" href="#">Disclaimers</a></li>
               <li><a class="footer__link" href="#">Contact</a></li>
+              <li><a class="footer__link" href="/login">Login</a></li>
+              <li><a class="footer__link" href="/register">Register</a></li>
             </ul>
           </div>
           <div class="col-lg-4 col-md-6 mb-5">
