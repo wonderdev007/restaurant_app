@@ -1037,7 +1037,7 @@ body.mobile-nav-active #mobile-nav-toggle i {
 
 .home-offer__offer-button:hover {
   color: #fff;
-  background-color: #fbc441;
+  background-color: #f7c53d;
 }
 
 @media (min-width: 600px) {
@@ -1205,7 +1205,7 @@ body.mobile-nav-active #mobile-nav-toggle i {
 }
 
 .reservations-page__btn {
-  color: #131230;
+  color: #2e2d2d;
   background: #f7c53d;
   text-transform: uppercase;
   font-size: 16px;
@@ -1218,7 +1218,7 @@ body.mobile-nav-active #mobile-nav-toggle i {
 
 .reservations-page__btn:hover {
   background: #fff;
-  border: 1px solid #f7c53d;
+  border: 1px solid #f5b92e;
 }
 
 @media (max-width: 767px) {
@@ -1242,7 +1242,7 @@ body.mobile-nav-active #mobile-nav-toggle i {
 }
 
 .offers-page__btn {
-  color: #131230;
+  color: #2e2d2d;
   background: #f7c53d;
   text-transform: uppercase;
   font-size: 16px;
@@ -1255,7 +1255,7 @@ body.mobile-nav-active #mobile-nav-toggle i {
 
 .offers-page__btn:hover {
   background: #fff;
-  border: 1px solid #f7c53d;
+  border: 1px solid #f5b92e;
 }
 
 @media (max-width: 767px) {
@@ -1327,8 +1327,8 @@ body.mobile-nav-active #mobile-nav-toggle i {
 }
 
 .contact-page .contact-btn {
-  color: #131230;
-  background: #f5b92e;
+  color: #2e2d2d;
+  background: #f7c53d;
   text-transform: uppercase;
   font-size: 16px;
   font-weight: 500;
