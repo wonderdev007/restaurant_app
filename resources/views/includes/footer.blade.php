@@ -3,7 +3,7 @@
         <div class="row mb-2 mt-4">
           <div class="col-lg-3 col-md-6 mb-5">
             <div>
-              <h3>Contact Info</h3>
+              <h3 class="footer__title">Contact Info</h3>
               <ul class="list-unstyled footer-link">
                 <li class="d-block">
                   <span class="d-block">Address:</span>
@@ -15,12 +15,12 @@
           </div>
           <div class="col-lg-3 col-md-6 mb-5">
             <div class="mb-5">
-              <h3>Opening Hours</h3>
+              <h3 class="footer__title">Opening Hours</h3>
               <p><strong class="d-block font-weight-normal">Monday-Sunday</strong><span class="footer__open-hours">5AM - 10PM</span></p>
             </div>
           </div>
           <div class="col-lg-2 col-md-6 mb-5">
-            <h3>Links</h3>
+            <h3 class="footer__title">Links</h3>
             <ul class="list-unstyled footer-link">
               <li><a class="footer__link" href="#">About</a></li>
               <li><a class="footer__link" href="#">Terms of Use</a></li>
@@ -29,7 +29,7 @@
             </ul>
           </div>
           <div class="col-lg-4 col-md-6 mb-5">
-            <h3>About Us</h3>
+            <h3 class="footer__title">About Us</h3>
             <p class="mb-5">{{$settings["seo"]->description}}</p>
             <ul class="list-unstyled footer__social-links d-flex">
               <li><a href="{{$settings["social"]->twitter_url}}" class="footer__link p-2"><span class="fa fa-twitter"></span></a></li>

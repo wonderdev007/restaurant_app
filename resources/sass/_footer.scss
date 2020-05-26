@@ -18,6 +18,12 @@
         }
     }
 
+    &__title {
+        @media #{$mobile_device} {
+            font-size: 1.45rem;
+        }
+    }
+
     &__db-contact,
     &__open-hours {
         color: $dark-grey;

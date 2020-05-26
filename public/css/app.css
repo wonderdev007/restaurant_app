@@ -1476,6 +1476,12 @@ body.mobile-nav-active #mobile-nav-toggle i {
   color: #d49f21;
 }
 
+@media (max-width: 767px) {
+  .footer__title {
+    font-size: 1.45rem;
+  }
+}
+
 .footer__db-contact,
 .footer__open-hours {
   color: #7c7c7c;
