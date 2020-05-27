@@ -14,7 +14,7 @@
     z-index: 997;
     box-shadow: 0px 3px 16px 0px rgba(0, 0, 0, 0.1);
 
-    @media (max-width: 478px) {
+    @media #{$mobile_device} {
         height: 60px;
     }
 
@@ -22,16 +22,15 @@
         display: flex;
         align-items: center;
         height: 60px;
-        position: fixed;
+        // position: fixed;
         left: 0;
         top: 0;
         right: 0;
         margin-top: 6px;
         margin-left: 18px;
 
-        font-size: 2rem;
-        font-family: "Nothing You Could Do", cursive;
-        font-weight: 600;
+        font-size: 4rem;
+        font-family: "braggest", cursive;
 
         @media (min-width: 1024px) {
             padding-left: 60px;
@@ -47,7 +46,7 @@
             right: 0;
             margin-left: 18px;
             margin-top: 2px;
-            font-size: 1.8rem;
+            font-size: 3rem;
         }
 
         a {
@@ -99,7 +98,7 @@
 /* Nav Menu Container */
 #nav-menu-container {
     float: right;
-    margin-top: 8px;
+    margin-top: 18px;
 
     @media (min-width: 1024px) {
         padding-right: 60px;
@@ -126,6 +125,9 @@
 }
 
 .nav-menu ul {
+    display: flex;
+    align-items: center;
+
     margin: 4px 0 0 0;
     padding: 10px;
     box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);

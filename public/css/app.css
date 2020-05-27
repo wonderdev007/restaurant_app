@@ -53,14 +53,14 @@ span {
 }
 
 .title {
-  font-size: 3rem;
-  font-weight: 700;
+  font-family: "braggest", cursive;
+  font-size: 7rem;
   margin-bottom: 3rem;
 }
 
 @media (max-width: 767px) {
   .title {
-    font-size: 2rem;
+    font-size: 5rem;
     margin-bottom: 1rem;
   }
 }
@@ -154,7 +154,7 @@ input:focus {
   box-shadow: 0px 3px 16px 0px rgba(0, 0, 0, 0.1);
 }
 
-@media (max-width: 478px) {
+@media (max-width: 767px) {
   #header {
     height: 60px;
   }
@@ -164,15 +164,13 @@ input:focus {
   display: flex;
   align-items: center;
   height: 60px;
-  position: fixed;
   left: 0;
   top: 0;
   right: 0;
   margin-top: 6px;
   margin-left: 18px;
-  font-size: 2rem;
-  font-family: "Nothing You Could Do", cursive;
-  font-weight: 600;
+  font-size: 4rem;
+  font-family: "braggest", cursive;
 }
 
 @media (min-width: 1024px) {
@@ -192,7 +190,7 @@ input:focus {
     right: 0;
     margin-left: 18px;
     margin-top: 2px;
-    font-size: 1.8rem;
+    font-size: 3rem;
   }
 }
 
@@ -248,7 +246,7 @@ input:focus {
 
 #nav-menu-container {
   float: right;
-  margin-top: 8px;
+  margin-top: 18px;
 }
 
 @media (min-width: 1024px) {
@@ -280,6 +278,8 @@ input:focus {
 }
 
 .nav-menu ul {
+  display: flex;
+  align-items: center;
   margin: 4px 0 0 0;
   padding: 10px;
   box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
@@ -585,15 +585,16 @@ body.mobile-nav-active #mobile-nav-toggle i {
   }
 }
 
-.slider_area .single_slider .slider_text h4 {
-  font-size: 140px;
-  color: #f2c64d;
+.slider_area .single_slider .slider_text h2 {
+  font-size: 240px;
+  font-family: "braggest", cursive;
+  color: #f7c53d;
   position: relative;
-  margin-top: -80px;
+  margin-top: -100px;
 }
 
 @media (max-width: 767px) {
-  .slider_area .single_slider .slider_text h4 {
+  .slider_area .single_slider .slider_text h2 {
     font-size: 50px;
     position: relative;
     margin-top: -50px;
@@ -1179,23 +1180,14 @@ body.mobile-nav-active #mobile-nav-toggle i {
 }
 
 .about-page {
-  padding: 10rem;
-}
-
-.about-page__title {
-  margin-bottom: 2rem;
-  font-size: 3rem;
-  font-weight: 700;
-}
-
-.about-page__text {
-  font-size: 1.1rem;
-  line-height: 1.6;
+  padding-top: 6rem;
+  padding-bottom: 3rem;
 }
 
 @media (max-width: 767px) {
   .about-page {
-    padding: 50px 20px;
+    padding-top: 50px;
+    padding-bottom: 0px;
     overflow: visible;
   }
 }
@@ -1204,6 +1196,21 @@ body.mobile-nav-active #mobile-nav-toggle i {
   .about-page {
     padding: 50px 20px;
   }
+}
+
+.about-page .about__title {
+  margin-bottom: 2rem;
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.about-page .about__text {
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+.about-page .about__img_1 {
+  margin-bottom: 30px;
 }
 
 .reservations-page {

@@ -36,3 +36,9 @@
         <link rel="stylesheet" href="/css/owl.carousel.min.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">
         <link rel="stylesheet" href="/css/app.css">
+        <style>
+                @font-face {
+                    font-family: braggest;
+                    src: url("/fonts/braggest/Braggest_Demo.ttf");
+                }
+        </style>

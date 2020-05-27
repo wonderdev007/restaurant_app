@@ -65,11 +65,13 @@
                 }
             }
 
-            h4 {
-                font-size: 140px;
-                color: #f2c64d;
+            h2 {
+                font-size: 240px;
+                font-family: "braggest", cursive;
+
+                color: $primary-color-light;
                 position: relative;
-                margin-top: -80px;
+                margin-top: -100px;
 
                 @media #{$mobile_device} {
                     font-size: 50px;

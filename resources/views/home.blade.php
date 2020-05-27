@@ -14,7 +14,7 @@
                             <div class="col-xl-9 col-md-9 col-md-12">
                                 <div class="slider_text text-center">
                                     <h3>Welcome to</h3>
-                                    <h4>{{$settings["general"]->site_title}}</h4>
+                                    <h2>{{$settings["general"]->site_title}}</h2>
                                 </div>
                             </div>
                         </div>
@@ -26,7 +26,7 @@
                             <div class="col-xl-9 col-md-9 col-md-12">
                                 <div class="slider_text text-center">
                                     <h3>Welcome to</h3>
-                                    <h4>{{$settings["general"]->site_title}}</h4>
+                                    <h2>{{$settings["general"]->site_title}}</h2>
                                 </div>
                             </div>
                         </div>
@@ -38,7 +38,7 @@
                             <div class="col-xl-9 col-md-9 col-md-12">
                                 <div class="slider_text text-center">
                                     <h3>Welcome to</h3>
-                                    <h4>{{$settings["general"]->site_title}}</h4>
+                                    <h2>{{$settings["general"]->site_title}}</h2>
                                 </div>
                             </div>
                         </div>
@@ -51,7 +51,7 @@
                             <div class="col-xl-9 col-md-9 col-md-12">
                                 <div class="slider_text text-center">
                                     <h3>Welcome to</h3>
-                                    <h4>{{$settings["general"]->site_title}}</h4>
+                                    <h2>{{$settings["general"]->site_title}}</h2>
                                 </div>
                             </div>
                         </div>
