@@ -45,7 +45,7 @@
             <p class="about__text">It is a restaurant for all occasions, popular for breakfast meetings, weekend family lunches, pre-dinner cocktails and exceptional lunches and dinners. We have a long-standing reputation for corporate entertaining and client events.</p>
           </div>
           <div class="col-md-6 ml-auto">
-              <p class="about-page__text">We are also a popular venue for weddings, the stunning location in the portico of Borough Market’s famous Floral Hall offers views of the bustling market below and the dome of St Paul’s Cathedral in the distance, making it a breathtaking setting for a memorable occasion.</p>
+              <p class="about__text">We are also a popular venue for weddings, the stunning location in the portico of Borough Market’s famous Floral Hall offers views of the bustling market below and the dome of St Paul’s Cathedral in the distance, making it a breathtaking setting for a memorable occasion.</p>
           </div>
         </div>
       </div>
