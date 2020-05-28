@@ -33,6 +33,7 @@ Route::get('/offers/thank-you', 'StaticPagesController@thankYou');
 
 // Admin Dashboard
 Route::get('/admin', 'admin\AdminController@dashboard');
+Route::get('/admin/estimated-revenue-daily', 'admin\AdminController@dailyRevenue');
 
 // Admin Users
 Route::get('/admin/users', 'admin\UsersController@index')->middleware('role:Admin');
