@@ -41,11 +41,16 @@ class AdminController extends Controller
             WHERE role_id = 2
         '));
 
+        // get all the reservations where guests total is greater than zero,
+        // limit by 5 and then order them by created_at descending
+        $latest_reservations = Reservation::where('guests_total', '>', 0)->limit(12)->orderBy('created_at', 'desc')->get();    
+
         return view('admin/dashboard', [
             'estimated_income_last_30' =>  $estimated_income_last_30[0]->total,
             'total_customers_last_30' => $total_customers_last_30[0]->total,
             'total_reservations_last_30' => $total_reservations_last_30[0]->total,
             'total_employees' => $total_employees[0]->total,
+            'latest_reservations' => $latest_reservations
         ]);
     }
 

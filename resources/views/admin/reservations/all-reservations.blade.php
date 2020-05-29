@@ -54,6 +54,7 @@
                                         <td>{{$reservation->fname}} {{$reservation->lname}}</td>
                                         <td>{{$reservation->email}}</td>
                                         <td>{{$reservation->phone_number}}</td>
+                                        <td>{{$reservation->guests_total}}</td>
                                         <td>{{$reservation->created_at}}</td>
                                         <td>{{$reservation->updated_at}}</td>
                                         <td>
