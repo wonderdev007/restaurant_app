@@ -28,8 +28,8 @@
 
                             @foreach($food_items as $key => $food_item)
                                 <div class="col-md-4">
-                                    <div class="single-menu__wrapper">
-                                        <div class="single-menu__item">
+                                    <div class="single-menu__item">
+                                        <div class="single-menu__name-and-price">
                                             <h4 class="single-menu__name">{{$food_item->title}}</h4>
                                             <span class="single-menu__price">&pound;{{$food_item->price}}</span>
                                         </div>

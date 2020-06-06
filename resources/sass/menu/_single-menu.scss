@@ -6,12 +6,12 @@
             color: $primary-color;
         }
 
-        &__wrapper {
-            margin: 1rem 0;
+        &__item {
+            margin-bottom: 3.5rem;
             padding: 0 0.5rem;
         }
 
-        &__item {
+        &__name-and-price {
             display: flex;
             justify-content: space-between;
             width: 100%;
@@ -33,10 +33,6 @@
             margin-top: -2px;
             padding-left: 4px;
         }
-
-        // &__description {
-        //     color: $dark-grey;
-        // }
     }
 }
 

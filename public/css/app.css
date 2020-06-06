@@ -1132,12 +1132,12 @@ body.mobile-nav-active #mobile-nav-toggle i {
   color: #f5b92e;
 }
 
-.single-menu-page .single-menu__wrapper {
-  margin: 1rem 0;
+.single-menu-page .single-menu__item {
+  margin-bottom: 3.5rem;
   padding: 0 0.5rem;
 }
 
-.single-menu-page .single-menu__item {
+.single-menu-page .single-menu__name-and-price {
   display: flex;
   justify-content: space-between;
   width: 100%;
